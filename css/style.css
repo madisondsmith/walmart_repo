@@ -1,0 +1,152 @@
+* {
+    font-family: ;
+    color: ;
+ }
+  
+ /** Text Styles */
+  
+ p {
+    color: ;
+    font-size: ;
+    line-height: ;
+    font-weight: ;
+ }
+  
+ h1 {
+    color: ;
+    font-size: ;
+    line-height: ;
+    text-decoration: ;
+    font-weight: ;
+ }
+  
+ h2 {
+    color: ;
+    font-size: ;
+    line-height: ;
+    text-decoration: ;
+    font-weight: ;
+ }
+  
+ h3 {
+    color: ;
+    font-size: ;
+    line-height: ;
+    text-decoration: ;
+    font-weight: ;
+ }
+  
+ h4 {
+    color: ;
+    font-size: ;
+    line-height: ;
+    text-decoration: ;
+    font-weight: ;
+ }
+  
+ /** Sections
+ You can add general padding / margin rules here. These sections we’ll flesh out more later
+  */
+  
+  
+ .nav {
+  
+ }
+  
+ header {
+    
+ }
+  
+ .sidebar {
+    margin: ;
+    padding: ;
+ }
+  
+ .footer {
+    margin: ;
+    padding: ;
+ }
+  
+ /** Button Styles
+ Button1 is the blue buttons
+ Button2 is the buttons with a black border
+ Add another if I missed something
+  */
+  
+ .button1 {
+    border-radius: ;
+    background-color: ;
+    color: ;
+    border: ;
+    width: ;
+    height: ;
+    padding: ;
+    text-align: ;
+    text-decoration: ;
+    display: ;
+    font-size: ;
+    transition-duration: ;
+ }
+  
+ .button1:hover {
+    background-color: ;
+    color: ;
+ }
+  
+ .button2 {
+    border-radius: ;
+    background-color: ;
+    color: ;
+    width: ;
+    height: ;
+    border: ;
+    padding: ;
+    text-align: ;
+    text-decoration: ;
+    display: ;
+    font-size: ;
+    transition-duration: ;
+ }
+  
+ .button2:hover {
+    background-color: ;
+    color: ;
+ }
+  
+ .disabled {
+    opacity: ;
+    cursor: not-allowed;
+ }
+  
+ /** Colors */
+  
+ .dblue {
+    background-color: #004c91;
+ }
+  
+ .blue {
+    background-color: #007dc6;
+ }
+  
+ .lblue {
+    background-color: #78b9e7;
+ }
+  
+ .orange {
+    background-color: #f47321;
+ }
+  
+ .yellow {
+    background-color: #ffc220;
+ }
+  
+ .dgreen {
+    background-color: #367c2b;
+ }
+  
+ .lgreen {
+    background-color: #76c043;
+ }
+
+
+ 
