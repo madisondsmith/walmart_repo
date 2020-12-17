@@ -57,6 +57,12 @@ h6 {
  Button2 is the buttons with a black border
  Add another if I missed something
   */
+
+  .input-group.md-form.form-sm.form-2 input {
+   border: 1px solid #bdbdbd;
+   border-top-left-radius: 0.25rem;
+   border-bottom-left-radius: 0.25rem;
+ }
   
  .button1 {
     border-radius: ;
@@ -71,6 +77,10 @@ h6 {
     display: ;
     font-size: ;
     transition-duration: ;
+ }
+
+ .input-group.md-form.form-sm.form-2 input.lime-border {
+   border: 1px solid #cddc39;
  }
   
  .button1:hover {
