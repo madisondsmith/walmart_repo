@@ -254,23 +254,24 @@ form {
     background-color: #76c043;
  }
 
- @media only screen and (min-width: 48em) {
-  .form-input-inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-  }
-}
-
  .social-campaign-content {
+  display: flex;
+  align-self: center;
   justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-box-align: start;
   align-items: flex-start;
   padding-bottom: 48px;
+  margin-left: 56px;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
 }
 
  .email-signup-form {
    display: flex;
    width: auto;
+   border: none;
  }
 
  .form-input {
@@ -279,11 +280,10 @@ form {
    flex-direction: row-reverse;
    font-size: 14px;
    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    flex-direction: row-reverse;
-    border-radius: 2px;
-    -webkit-box-shadow: inset 0 0 0 1px #9d9fa2;
-    box-shadow: inset 0 0 0 1px #9d9fa2;
+   -webkit-box-direction: reverse;
+   border-radius: 2px;
+   -webkit-box-shadow: inset 0 0 0 1px #9d9fa2;
+   box-shadow: inset 0 0 0 1px #9d9fa2;
  }
 
  @media only screen and (min-width: 48em) {
@@ -363,8 +363,56 @@ form {
   padding: 0 20px;
  }
 
+ @media only screen and (max-width: 504px) {
+  .social-links {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .social-links {
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+  }
+}
+
  .social-links {
-   
+  display: flex;
+ }
+
+ @media only screen and (min-width: 64em) {
+  .social-icon {
+    margin-inline-end: 26px;
+  }
+}
+
+ .social-icon {
+   margin-inline-end: 14px;
+ }
+
+ @media only screen and (max-width: 599px) {
+  .social-icon-mobile {
+    display: inline-flex;
+  }
+}
+
+ .social-icon-mobile {
+  color: black;
+  width: 100%;
+ }
+
+ @media only screen and (max-width: 599px) {
+  .icon-text {
+    align-self: center;
+  }
+}
+
+ .icon-text {
+   padding-left: 4px;
+   white-space: nowrap;
+   font-size: 14px;
  }
 
  .footer-content {
