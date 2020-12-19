@@ -85,6 +85,11 @@ h6 {
     margin: ;
     padding: ;
  }
+
+ .jumbotron {
+  background-image: url("../img/jumbotron_bg.jpg");
+  background-size: cover;
+}
   
 
 /** sign in form
