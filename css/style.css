@@ -468,3 +468,34 @@ form {
    color: black;
    white-space: nowrap;
  }
+
+ .footer-sister-links-list {
+   flex-direction: row;
+   white-space: nowrap;
+   margin-left: 41px;
+   margin-right: 41px;
+ }
+
+ .sister-links-header {
+   font-size: 14px;
+ }
+
+.sister-brand-content {
+}
+
+.sister-brands {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.sister-brand-links {
+  display: inline-block;
+  padding-bottom: 16px;
+  padding-left: 32px;
+}
+
+.brand-img {
+  max-width: 120px;
+}
