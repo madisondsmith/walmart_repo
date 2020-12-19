@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  height: 100%;
+}
 
 p {
     font-family: "BogleWeb-Regular", Verdana, sans-serif;
@@ -252,4 +257,193 @@ form {
   
  .lgreen {
     background-color: #76c043;
+ }
+
+ .social-campaign-content {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  padding-bottom: 48px;
+  margin-left: 56px;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+ .email-signup-form {
+   display: flex;
+   width: auto;
+   border: none;
+ }
+
+ .form-input {
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+   font-size: 14px;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: reverse;
+   border-radius: 2px;
+   -webkit-box-shadow: inset 0 0 0 1px #9d9fa2;
+   box-shadow: inset 0 0 0 1px #9d9fa2;
+ }
+
+ @media only screen and (min-width: 48em) {
+  .form-input-inner {
+      width: 245px;
+      height: 52px;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .form-input-inner {
+      width: 359px;
+  }
+}
+
+ .form-input-inner {
+  background-color: transparent;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #000;
+    font-family: inherit;
+    font-size: inherit;
+    height: 54px;
+    margin: 0;
+    padding: 16px;
+    -webkit-transition: -webkit-box-shadow .2s;
+    transition: -webkit-box-shadow .2s;
+    transition: box-shadow .2s;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    height: 48px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+ }
+
+ .email-signup-btn {
+  -webkit-appearance: none!important;
+  -moz-appearance: none!important;
+  appearance: none!important;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none!important;
+  -webkit-transition-duration: .12s;
+  transition-duration: .12s;
+  -webkit-transition-property: background-color,opacity,border-color,color;
+  transition-property: background-color,opacity,border-color,color;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+ }
+
+ .email-signup-btn-inner {
+  background: #000;
+  color: #fff;
+  flex-shrink: 0;
+  font-weight: 700;
+  height: 48px;
+  width: auto;
+  padding: 0 20px;
+ }
+
+ @media only screen and (max-width: 504px) {
+  .social-links {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .social-links {
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+ .social-links {
+  display: flex;
+ }
+
+ @media only screen and (min-width: 64em) {
+  .social-icon {
+    margin-inline-end: 26px;
+  }
+}
+
+ .social-icon {
+   margin-inline-end: 14px;
+ }
+
+ @media only screen and (max-width: 599px) {
+  .social-icon-mobile {
+    display: inline-flex;
+  }
+}
+
+ .social-icon-mobile {
+  color: black;
+  width: 100%;
+ }
+
+ @media only screen and (max-width: 599px) {
+  .icon-text {
+    align-self: center;
+  }
+}
+
+ .icon-text {
+   padding-left: 4px;
+   white-space: nowrap;
+   font-size: 14px;
+ }
+
+ .footer-content {
+   padding-inline-start: 56px;
+   padding-inline-end: 56px;
+ }
+
+ .col-footer {
+   font-size: 12px;
+   line-height: 2.5em;
+   padding-bottom: 16px;
+ }
+
+ .footer-header {
+   font-size: 14px;
+   font-weight: 600;
+   white-space: nowrap;
+ }
+
+ .footer-list {
+   list-style: none;
+   color: black;
+   padding-inline-start: 0;
+ }
+
+ .footer-link {
+   color: black;
+   white-space: nowrap;
  }
