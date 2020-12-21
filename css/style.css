@@ -32,6 +32,7 @@ h6 {
     font-family: "BogleWeb-Black", Verdana, sans-serif;
     font-size: 12px;
 }
+
  /** Sections
  You can add general padding / margin rules here. These sections we’ll flesh out more later
   */
@@ -281,7 +282,7 @@ form {
 
  /* begin footer styles */
  .full-footer-content {
-   margin-bottom: 24px;
+   margin: 56px 24px 24px;
  }
 
  .social-campaign-content {
@@ -515,4 +516,26 @@ form {
 
 .brand-img {
   max-width: 120px;
+}
+
+.rights-reserved-content {
+  margin: 0;
+}
+
+.rights-reserved {
+  border-top: 1px solid #e6e7e8;
+  padding-top: 24px;
+  
+}
+
+.text-1 {
+  color: black;
+  font-size: 12px;
+  float: left;
+}
+
+.text-2 {
+  color: #6d6e71;
+  font-size: 12px;
+  float: right;
 }
