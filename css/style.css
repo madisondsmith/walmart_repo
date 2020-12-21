@@ -279,6 +279,11 @@ form {
     background-color: #76c043;
  }
 
+ /* begin footer styles */
+ .full-footer-content {
+   margin-bottom: 24px;
+ }
+
  .social-campaign-content {
   display: flex;
   align-self: center;
@@ -388,6 +393,11 @@ form {
   padding: 0 20px;
  }
 
+ .btn-text {
+   font-size: 14px;
+   padding: 20px;
+ }
+
  @media only screen and (max-width: 504px) {
   .social-links {
     width: 100%;
@@ -405,6 +415,7 @@ form {
 
  .social-links {
   display: flex;
+  padding-right: 41px;
  }
 
  @media only screen and (min-width: 64em) {
@@ -414,7 +425,7 @@ form {
 }
 
  .social-icon {
-   margin-inline-end: 14px;
+   margin-inline-end: 26px;
  }
 
  @media only screen and (max-width: 599px) {
@@ -426,6 +437,7 @@ form {
  .social-icon-mobile {
   color: black;
   width: 100%;
+  margin-left: 40px;
  }
 
  @media only screen and (max-width: 599px) {
@@ -455,12 +467,17 @@ form {
    font-size: 14px;
    font-weight: 600;
    white-space: nowrap;
+   padding-bottom: 8px;
  }
 
  .footer-list {
    list-style: none;
    color: black;
    padding-inline-start: 0;
+ }
+
+ .footer-list-links {
+   padding-bottom: 5px;
  }
 
  .footer-link {
@@ -476,17 +493,18 @@ form {
  }
 
  .sister-links-header {
-   font-size: 14px;
+   font-size: 12px;
+   color: #6d6e71;
  }
 
 .sister-brand-content {
+  flex-direction: column;
 }
 
 .sister-brands {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  float: left;
 }
 
 .sister-brand-links {
