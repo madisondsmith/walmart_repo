@@ -196,9 +196,7 @@ form {
   */
 
   .input-group.md-form.form-sm.form-2 input {
-   border: 1px solid #bdbdbd;
-   border-top-left-radius: 0.25rem;
-   border-bottom-left-radius: 0.25rem;
+ border-radius: 20px;
  }
   
  .button1 {
@@ -253,7 +251,7 @@ form {
  /** Colors */
   
  .dblue {
-    background-color: #004c91;
+    background-color: #041f41;
  }
   
  .blue {
