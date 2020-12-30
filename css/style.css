@@ -33,6 +33,10 @@ h6 {
     font-size: 12px;
 }
 
+
+.tall {
+  height: 60px;
+}
 /** vertical process flow */
 
 .bs-vertical-wizard {
@@ -372,6 +376,82 @@ h6 {
   object-fit: cover
 }
 
+.input-group-append {
+  border-radius: 0px, 50px, 0px, 50px;
+}
+
+/* Steps */
+.step {
+  position: relative;
+  min-height: 1em;
+  color: gray;
+}
+.step + .step {
+  margin-top: 1.5em
+}
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+.step.step-active {
+  color: #4285f4
+}
+.step.step-active .circle {
+  background-color: #4285f4;
+}
+
+/* Circle */
+.circle {
+  background: gray;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+.step:last-child .circle:after {
+  display: none
+}
+
+/* Card Shadows */
+
+.shade {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* Stepper Titles */
+.title {
+  line-height: 1.5em;
+  font-weight: bold;
+}
+.caption {
+  font-size: 0.8em;
+}
+
  /** Sections
  You can add general padding / margin rules here. These sections we’ll flesh out more later
   */
@@ -407,14 +487,6 @@ h6 {
    padding: 0px 10px;
  }
 
-  
- .nav {
-  
- }
-  
- header {
-    
- }
   
  .sidebar {
     margin: ;
@@ -462,19 +534,13 @@ h6 {
 
 /** sign in form
 */
-
-/* Bordered form */
-form {
-   border: 3px solid #f1f1f1;
- }
  
  /* Full-width inputs */
- input[type=text], input[type=password] {
+ .inputSign[type=text], .inputSign[type=password] {
    width: 100%;
    padding: 12px 20px;
    margin: 8px 0;
    display: inline-block;
-   border: 1px solid #ccc;
    box-sizing: border-box;
  }
  
@@ -542,7 +608,7 @@ form {
  Add another if I missed something
   */
 
-  .input-group.md-form.form-sm.form-2 input {
+.input-group.md-form.form-sm.form-2 input {
  border-radius: 20px;
  }
   
@@ -564,9 +630,7 @@ form {
     cursor: pointer;
  }
 
- .input-group.md-form.form-sm.form-2 input.lime-border {
-   border: 1px solid #cddc39;
- }
+
   
  .button1:hover {
     background-color: rgb(127,178,255);
@@ -745,7 +809,7 @@ button > span {
   -moz-appearance: none!important;
   appearance: none!important;
   background: transparent;
-  border-radius: 0;
+  border-radius: 20px;
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -974,4 +1038,71 @@ button > span {
   transition-duration: .12s;
   transition-timing-function: ease-out;
   width: 100%;
+}
+
+/** Search bar with auto fill */
+input {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+
+.autocomplete-items {
+  position: absolute;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+.input-group {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#topHeader {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#zip {
+  max-height: 20px;
+}
+
+#saved {
+  max-height: 18px;
+}
+
+#cart3 {
+  max-height: 30px;
 }
