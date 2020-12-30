@@ -7,38 +7,35 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
     <title>Checkout example · Bootstrap v5.0</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+<!--   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/"> --> 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     
 
     <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="css/form-validation.css" rel="stylesheet">
+    <!-- Custom styles for this template
+    <link href="css/form-validation.css" rel="stylesheet"> -->
   </head>
+
   <body class="bg-light">
+
+<div id="example-vertical">
+    <h3>Keyboard</h3>
+    <section>
+        <p>Try the keyboard navigation by clicking arrow left or right!</p>
+    </section>
+    <h3>Effects</h3>
+    <section>
+        <p>Wonderful transition effects.</p>
+    </section>
+    <h3>Pager</h3>
+    <section>
+        <p>The next and previous buttons help you to navigate through your content.</p>
+    </section>
+</div>
     
+<!--
 <div class="container">
   <main>
     <div class="py-5 text-center">
@@ -243,6 +240,59 @@
               </div>
             </div>
           </div>
+          <hr class="my-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
 
           <hr class="my-4">
 
@@ -251,12 +301,12 @@
       </div>
     </div>
   </main>
+</div>
 
 
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="row">
-        
         <div class="col-sm-4 col-md-3 side-content">
             <div class="bs-vertical-wizard">
                 <ul>
@@ -271,20 +321,15 @@
                     </li>
                     <li>
                         <a href="#">Payment method</a>
-                    </li>
-                    
+                    </li> 
                 </ul>
             </div>
         </div>
 
         <div class="col-sm-8 col-md-9">
             <div class="row justify-content-center">
-                <div class="col-11 text-center p-0 mt-3 mb-2">
-                    <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                        <h2 id="heading">Sign Up Your User Account</h2>
-                        <p>Fill all form field to go to next step</p>
-                        <form id="msform">
-                            <!-- progressbar -->
+                <form id="msform">
+                            progressbar 
                             <ul id="progressbar">
                                 <li class="active" id="account"><strong>Account</strong></li>
                                 <li id="personal"><strong>Personal</strong></li>
@@ -294,140 +339,225 @@
         
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> <br> <!-- fieldsets -->
+                            </div> <br> fieldsets 
         
                             <fieldset>
                                 <div class="form-card">
-                                    <div class="row">
-                                        <div class="col col-xs-12 col-sm-9 col-md-9">
-                                            <div class="row pl-2">
-                                                <div class="col border">
-                                                    <h2>Your cart: 3 items</h2>
-                                                    <p>My whole order is a gift</p>
-                                                </div>
+                                            <div class="py-5 text-center">
+                                              <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                                              <h2>Checkout form</h2>
                                             </div>
-                                
-                                            <div class="row">
-                                                <div class="col-xs-3 ">
-                                                    <img src="images/imagesHome/eggItems/eggs1.jpeg">
-                                                </div>
-                                                <div class="col-xs-9 col-sm-6 col-md-6 col-lg-6">
-                                                    <h3>Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h3>
-                                                    <p5>Sold & shipped by MGR fantastic Deals Inc.</p5>
+                                        
+                                            <div class="row g-3">
+                                              <div class="col-md-5 col-lg-4 order-md-last">
+                                                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                                  <span class="text-muted">Your cart</span>
+                                                  <span class="badge bg-secondary rounded-pill">3</span>
+                                                </h4>
+                                                <ul class="list-group mb-3">
+                                                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                                                    <div>
+                                                      <h6 class="my-0">Alfresco Eggs</h6>
+                                                      <small class="text-muted">Brief description</small>
+                                                    </div>
+                                                    <span class="text-muted">$29.99</span>
+                                                  </li>
+                                                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                                                    <div>
+                                                      <h6 class="my-0">Women's active nude tech</h6>
+                                                      <small class="text-muted">Brief description</small>
+                                                    </div>
+                                                    <span class="text-muted">$10.96</span>
+                                                  </li>
+                                                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                                                    <div>
+                                                      <h6 class="my-0">Nitty Gritty Roller Mop</h6>
+                                                      <small class="text-muted">Brief description</small>
+                                                    </div>
+                                                    <span class="text-muted">$11.58</span>
+                                                  </li>
+                                                  <li class="list-group-item d-flex justify-content-between bg-light">
+                                                    <div class="text-success">
+                                                      <h6 class="my-0">Promo code</h6>
+                                                      <small>EXAMPLECODE</small>
+                                                    </div>
+                                                    <span class="text-success">−$5</span>
+                                                  </li>
+                                                  <li class="list-group-item d-flex justify-content-between">
+                                                    <span>Total (USD)</span>
+                                                    <strong>$20</strong>
+                                                  </li>
+                                                </ul>
+                                        
+                                                <form class="card p-2">
+                                                  <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Promo code">
+                                                    <button type="submit" class="btn btn-secondary">Redeem</button>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                              <div class="col-md-7 col-lg-8">
+                                                <h4 class="mb-3">Billing address</h4>
+                                                <form class="needs-validation" novalidate>
+                                                  <div class="row g-3">
+                                                    <div class="col-sm-6">
+                                                      <label for="firstName" class="form-label">First name</label>
+                                                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                                      <div class="invalid-feedback">
+                                                        Valid first name is required.
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-sm-6">
+                                                      <label for="lastName" class="form-label">Last name</label>
+                                                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                                      <div class="invalid-feedback">
+                                                        Valid last name is required.
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-12">
+                                                      <label for="username" class="form-label">Username</label>
+                                                      <div class="input-group">
+                                                        <span class="input-group-text">@</span>
+                                                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                                      <div class="invalid-feedback">
+                                                          Your username is required.
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-12">
+                                                      <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                                                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                                      <div class="invalid-feedback">
+                                                        Please enter a valid email address for shipping updates.
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-12">
+                                                      <label for="address" class="form-label">Address</label>
+                                                      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                                      <div class="invalid-feedback">
+                                                        Please enter your shipping address.
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-12">
+                                                      <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                                                      <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                                                    </div>
+                                        
+                                                    <div class="col-md-5">
+                                                      <label for="country" class="form-label">Country</label>
+                                                      <select class="form-select" id="country" required>
+                                                        <option value="">Choose...</option>
+                                                        <option>United States</option>
+                                                      </select>
+                                                      <div class="invalid-feedback">
+                                                        Please select a valid country.
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-md-4">
+                                                      <label for="state" class="form-label">State</label>
+                                                      <select class="form-select" id="state" required>
+                                                        <option value="">Choose...</option>
+                                                        <option>California</option>
+                                                      </select>
+                                                      <div class="invalid-feedback">
+                                                        Please provide a valid state.
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-md-3">
+                                                      <label for="zip" class="form-label">Zip</label>
+                                                      <input type="text" class="form-control" id="zip" placeholder="" required>
+                                                      <div class="invalid-feedback">
+                                                        Zip code required.
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                        
+                                                  <hr class="my-4">
+                                        
+                                                  <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="same-address">
+                                                    <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                                                  </div>
+                                        
+                                                  <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="save-info">
+                                                    <label class="form-check-label" for="save-info">Save this information for next time</label>
+                                                  </div>
+                                        
+                                                  <hr class="my-4">
+                                        
+                                                  <h4 class="mb-3">Payment</h4>
+                                        
+                                                  <div class="my-3">
                                                     <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                                        <label class="form-check-label" for="same-address">This item is a gift</label>
+                                                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                                      <label class="form-check-label" for="credit">Credit card</label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                                        <label class="form-check-label" for="same-address">Allow substitution</label>
+                                                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                                      <label class="form-check-label" for="debit">Debit card</label>
                                                     </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <input type="number" value="1" min="0" max="100" step="1"/>
-                                                        </div>
-                                                        <div class="col">
-                                                            <h5>Delete</h5>
-                                                        </div>
-                                                        <div class="col">
-                                                            <h5>Save for later</h5>
-                                                        </div>
+                                                    <div class="form-check">
+                                                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                                      <label class="form-check-label" for="paypal">PayPal</label>
                                                     </div>
-                                                </div>
+                                                  </div>
+                                        
+                                                  <div class="row gy-3">
+                                                    <div class="col-md-6">
+                                                      <label for="cc-name" class="form-label">Name on card</label>
+                                                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                                      <small class="text-muted">Full name as displayed on card</small>
+                                                      <div class="invalid-feedback">
+                                                        Name on card is required
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-md-6">
+                                                      <label for="cc-number" class="form-label">Credit card number</label>
+                                                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                                      <div class="invalid-feedback">
+                                                        Credit card number is required
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-md-3">
+                                                      <label for="cc-expiration" class="form-label">Expiration</label>
+                                                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                                      <div class="invalid-feedback">
+                                                        Expiration date required
+                                                      </div>
+                                                    </div>
+                                        
+                                                    <div class="col-md-3">
+                                                      <label for="cc-cvv" class="form-label">CVV</label>
+                                                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                                      <div class="invalid-feedback">
+                                                        Security code required
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                        
+                                                  <hr class="my-4">
+                                        
+                                                  <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                                                </form>
+                                              </div>
                                             </div>
-                                    
-                                            <div class="row">
-                                                <div class="col-xs-3 ">
-                                                    <img src="images/imagesHome/eggItems/eggs1.jpeg">
-                                                </div>
-                                                <div class="col-xs-9 col-sm-6 col-md-6 col-lg-6">
-                                                    <h3>Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h3>
-                                                    <p5>Sold & shipped by MGR fantastic Deals Inc.</p5>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                                        <label class="form-check-label" for="same-address">This item is a gift</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                                        <label class="form-check-label" for="same-address">Allow substitution</label>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <input type="number" value="1" min="0" max="100" step="1"/>
-                                                        </div>
-                                                        <div class="col">
-                                                            <h5>Delete</h5>
-                                                        </div>
-                                                        <div class="col">
-                                                            <h5>Save for later</h5>
-                                                        </div>
-                                                    </div>    
-                                                </div>
-                                            </div>
-                                    
-                                            <div class="row">
-                                                <div class="col-xs-3 ">
-                                                    <img src="images/imagesLeggingsSearchPage/yogaliciouslegging.jpeg">
-                                                </div>
-                                                <div class="col-xs-9 col-sm-6 col-md-6 col-lg-6">
-                                                    <h3>Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h3>
-                                                    <p5>Sold & shipped by MGR fantastic Deals Inc.</p5>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                                        <label class="form-check-label" for="same-address">This item is a gift</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="same-address">
-                                                        <label class="form-check-label" for="same-address">Allow substitution</label>
-                                                    </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <input type="number" value="1" min="0" max="100" step="1"/>
-                                                        </div>
-                                                        <div class="col">
-                                                            <h5>Delete</h5>
-                                                        </div>
-                                                        <div class="col">
-                                                            <h5>Save for later</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col"></div>
-                                        <!-- side bar -->  
-                                        <div class="border pl-2">
-                                            <p>Subtotal (1 item) $29.99</p>
-                                            <p>Delivery Free</p>
-                                            <p>Taxes and fees - -</p>
-                                            <p>(calculated in checkout)</p>
-                                            <br>
-                                            <br>
-                                            <p>Est. total $29.99</p>
-                                        </div>  
-                                    </div>
-                                    <input type="button" name="next" class="next action-button" value="Next" />
-                                </div>     
-                            </fieldset>
+                            
+                            </div>  
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
         
-                            <fieldset>
-                                <div class="form-card">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2 class="fs-title">Delivery Method</h2>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-
-                                    </div>
-                                    <div class="row">
-                                        <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                                    </div>
-                                      
-                            </fieldset>
+                         
         
                             <fieldset>
                                 <div class="form-card">
@@ -438,8 +568,16 @@
                                         <div class="col-5">
                                             <h2 class="steps">Step 3 - 4</h2>
                                         </div>
-                                    </div> <label class="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic" accept="image/*"> <label class="fieldlabels">Upload Signature Photo:</label> <input type="file" name="pic" accept="image/*">
-                                </div> <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                    </div> 
+
+                                    <label class="fieldlabels">Upload Your Photo:</label> 
+                                    <input type="file" name="pic" accept="image/*"> 
+                                    <label class="fieldlabels">Upload Signature Photo:</label> 
+                                    <input type="file" name="pic" accept="image/*">
+                                </div> 
+
+                                <input type="button" name="next" class="next action-button" value="Submit" /> 
+                                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                             </fieldset>
         
                             <fieldset>
@@ -463,32 +601,28 @@
                                     </div>
                                 </div>
                             </fieldset>
-        
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
-
-    </div>
-    
-</div>
-
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2017–2020 Company Name</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
-    </ul>
-  </footer>
-</div>
+        -->
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
-      <script src="js/form-validation.js"></script>
+      <!-- <script src="js/form-validation.js"></script> -->
       <script>
+$("#example-vertical").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "slideLeft",
+    stepsOrientation: "vertical"
+});
+</script>
+
+<!--
       $(document).ready(function(){
 
         var current_fs, next_fs, previous_fs; //fieldsets
@@ -565,6 +699,7 @@
         })
         
         });
-    </script>
+    -->
+
   </body>
 </html>
