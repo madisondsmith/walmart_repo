@@ -33,6 +33,434 @@ h6 {
     font-size: 12px;
 }
 
+
+.tall {
+  height: 60px;
+}
+/** vertical process flow */
+
+.bs-vertical-wizard {
+  border-right: 1px solid #eaecf1;
+  padding-bottom: 50px;
+}
+
+.bs-vertical-wizard ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bs-vertical-wizard ul>li {
+  display: block;
+  position: relative;
+}
+
+.bs-vertical-wizard ul>li>a {
+  display: block;
+  padding: 10px 10px 10px 40px;
+  color: #333c4e;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: .8px;
+}
+
+.bs-vertical-wizard ul>li>a:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: calc(100% - 25px);
+  background-color: #bdc2ce;
+  left: 13px;
+  bottom: -9px;
+  z-index: 3;
+}
+
+.bs-vertical-wizard ul>li>a .ico {
+  pointer-events: none;
+  font-size: 14px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  z-index: 2;
+}
+
+.bs-vertical-wizard ul>li>a:after {
+  content: '';
+  position: absolute;
+  border: 2px solid #bdc2ce;
+  border-radius: 50%;
+  top: 14px;
+  left: 6px;
+  width: 16px;
+  height: 16px;
+  z-index: 3;
+}
+
+.bs-vertical-wizard ul>li>a .desc {
+  display: block;
+  color: #bdc2ce;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: .8px;
+}
+
+.bs-vertical-wizard ul>li.complete>a:before {
+  background-color: #5cb85c;
+  opacity: 1;
+  height: calc(100% - 25px);
+  bottom: -9px;
+}
+
+.bs-vertical-wizard ul>li.complete>a:after {display:none;}
+.bs-vertical-wizard ul>li.locked>a:after {display:none;}
+.bs-vertical-wizard ul>li:last-child>a:before {display:none;}
+
+.bs-vertical-wizard ul>li.complete>a .ico {
+  left: 8px;
+}
+
+.bs-vertical-wizard ul>li>a .ico.ico-green {
+  color: #5cb85c;
+}
+
+.bs-vertical-wizard ul>li>a .ico.ico-muted {
+  color: #bdc2ce;
+}
+
+.bs-vertical-wizard ul>li.current {
+  background-color: #fff;
+}
+
+.bs-vertical-wizard ul>li.current>a:before {
+  background-color: #ffe357;
+  opacity: 1;
+}
+
+.bs-vertical-wizard ul>li.current>a:after {
+  border-color: #ffe357;
+  background-color: #ffe357;
+  opacity: 1;
+}
+
+.bs-vertical-wizard ul>li.current:after, .bs-vertical-wizard ul>li.current:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.bs-vertical-wizard ul>li.current:after {
+  border-color: rgba(255,255,255,0);
+  border-left-color: #fff;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+.bs-vertical-wizard ul>li.current:before {
+  border-color: rgba(234,236,241,0);
+  border-left-color: #eaecf1;
+  border-width: 11px;
+  margin-top: -11px;
+}
+
+
+
+/** grey checkout form */
+
+
+#heading {
+  text-transform: uppercase;
+  color: #673AB7;
+  font-weight: normal
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative
+}
+
+.form-card {
+  text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none
+}
+
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  background-color: #ECEFF1;
+  font-size: 16px;
+  letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #673AB7;
+  outline-width: 0
+}
+
+#msform .action-button {
+  width: 100px;
+  background: #673AB7;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  background-color: #311B92
+}
+
+#msform .action-button-previous {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  background-color: #000000
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #673AB7;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left
+}
+
+.purple-text {
+  color: #673AB7;
+  font-weight: normal
+}
+
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey
+}
+
+#progressbar .active {
+  color: #673AB7
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f13e"
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007"
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f030"
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c"
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #673AB7
+}
+
+.progress {
+  height: 20px
+}
+
+.progress-bar {
+  background-color: #673AB7
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover
+}
+
+.input-group-append {
+  border-radius: 0px, 50px, 0px, 50px;
+}
+
+
+
+/* Steps */
+.step {
+  position: relative;
+  min-height: 1em;
+  color: gray;
+}
+.step + .step {
+  margin-top: 1.5em
+}
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+.step.step-active {
+  color: #4285f4
+}
+.step.step-active .circle {
+  background-color: #4285f4;
+}
+
+
+
+/* Circle */
+.circle {
+  background: gray;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+.step:last-child .circle:after {
+  display: none
+}
+
+/* Card Shadows */
+
+.shade {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+
+/* Stepper Titles */
+.title {
+  line-height: 1.5em;
+  font-weight: bold;
+}
+.caption {
+  font-size: 0.8em;
+}
+
  /** Sections
  You can add general padding / margin rules here. These sections we’ll flesh out more later
   */
@@ -68,44 +496,16 @@ h6 {
    padding: 0px 10px;
  }
 
-  
- .nav {
-  
- }
-  
- header {
-    
- }
-  
- .sidebar {
-    margin: ;
-    padding: ;
- }
-  
- .footer {
-    margin: ;
-    padding: ;
- }
 
- .jumbotron {
-  background-image: url("../img/jumbotron_bg.jpg");
-  background-size: cover;
-}
 
 /** sidebar css */
 
 .clear{
   clear:both;
   } 
-  .main2{
-  
-  }
-  .top {
-  
-  }
 
   .left {
-  float:left;
+  float: left;
   }
 
   .right{
@@ -113,21 +513,23 @@ h6 {
   }
   
 
-/** sign in form
+/** Star Rating
 */
 
-/* Bordered form */
-form {
-   border: 3px solid #f1f1f1;
- }
+.checked {
+  color: orange;
+}
+
+
+/** sign in form
+*/
  
  /* Full-width inputs */
- input[type=text], input[type=password] {
+ .inputSign[type=text], .inputSign[type=password] {
    width: 100%;
    padding: 12px 20px;
    margin: 8px 0;
    display: inline-block;
-   border: 1px solid #ccc;
    box-sizing: border-box;
  }
  
@@ -195,40 +597,39 @@ form {
  Add another if I missed something
   */
 
-  .input-group.md-form.form-sm.form-2 input {
-   border: 1px solid #bdbdbd;
-   border-top-left-radius: 0.25rem;
-   border-bottom-left-radius: 0.25rem;
+.input-group.md-form.form-sm.form-2 input {
+ border-radius: 20px;
  }
   
  .button1 {
-    border-radius: ;
-    background-color: ;
-    color: ;
-    border: ;
+    border-radius: 50px;
+    background-color: rgb(0,101,255);
+    color: white;
+    border: none;
     width: ;
-    height: ;
+    height: 40px;
     padding: ;
-    text-align: ;
-    text-decoration: ;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
     display: ;
-    font-size: ;
+    font-size: 16px;
     transition-duration: ;
+    cursor: pointer;
  }
 
- .input-group.md-form.form-sm.form-2 input.lime-border {
-   border: 1px solid #cddc39;
- }
+
   
  .button1:hover {
-    background-color: ;
-    color: ;
+    background-color: rgb(127,178,255);
+    color: white;
  }
   
  .button2 {
     border-radius: ;
     background-color: ;
-    color: ;
+    color: black;
     width: ;
     height: ;
     border: ;
@@ -238,6 +639,7 @@ form {
     display: ;
     font-size: ;
     transition-duration: ;
+    cursor: pointer;
  }
   
  .button2:hover {
@@ -249,11 +651,45 @@ form {
     opacity: ;
     cursor: not-allowed;
  }
+
+ /** Heart Button */
+
+
+ .heart {
+  font-size: 25px;
+	color:red;
+}
+
+ /*only for centering on the page
+.btn {
+  margin: 0 auto;
+  display: block;
+}
+/*removes ugly bootstrap border button
+*.btn:active,
+.btn:focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none !important;
+}
+
+button > span {
+  color: black;
+  font-size:20px;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.btn:active, .btn:hover, .btn:focus {
+  background-color:white;
+}
   
  /** Colors */
   
  .dblue {
-    background-color: #004c91;
+    background-color: #041f41;
  }
   
  .blue {
@@ -362,7 +798,7 @@ form {
   -moz-appearance: none!important;
   appearance: none!important;
   background: transparent;
-  border-radius: 0;
+  border-radius: 20px;
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -540,6 +976,8 @@ form {
   float: right;
 }
 
+
+
 /* sign in/ sign up styles */
 #sign-in-widget {
   text-align: center;
@@ -590,11 +1028,69 @@ form {
   width: 100%;
 }
 
-.input-text {
+/** Search bar with auto fill */
+input {
+  background-color: #f1f1f1;
+  padding: 10px;
   font-size: 16px;
 }
 
-input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
-  padding: 0;
-  background-color: #cb2c90;
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+
+.autocomplete-items {
+  position: absolute;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+.input-group {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#topHeader {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#zip {
+  max-height: 20px;
+}
+
+#saved {
+  max-height: 18px;
+}
+
+#cart3 {
+  max-height: 30px;
+}

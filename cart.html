@@ -6,6 +6,7 @@
     <!-- css/stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Walmart.com | Save Money. Live Better</title>
 </head>
 
@@ -30,53 +31,144 @@
 
 
 <section>
-    <div class="container">
-        <div class="main border">
-            <div class="row pl-2">
-                <div class="col">
-                    <h2>Your cart: 2 items</h2>
-                    <p>My whole order is a gift</p>
-                </div>
-            </div>
+    <div class="container-fluid">
+        <div class="border">
             <div class="row">
-                <div class="col">
-                    <img src="images/imagesHome/eggItems/eggs1.jpeg">
-                </div>
-                <div class="col">
-                    <h3>Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h3>
-                    <p5>Sold & shipped by MGR fantastic Deals Inc.</p5>
-                    <p>checkmark This item is a gift</p>
-                    <p>checkmark Allow substitution</p>
-                    <button>1</button> <a>Delete</a> <a>Save for later</a> <a>Change delivery method</a>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <img src="images/imagesHome/mopItems/mops1.jpeg">
-                    </div>
-                    <div class="col">
-                        <h3>O-Cedar EasyWring Spin Mop & Bucket System</h3>
-                        <p>Free pickup today</p>
-                        <p>checkmark This item is a gift</p>
-                        <p>checkmark Allow substitution</p>
-                        <button>1</button> <a>Delete</a> <a>Save for later</a> <a>Change delivery method</a>
-                    </div>
-            </div>
-        </div>
+            <div class="col col-xs-12 col-sm-9 col-md-9">
 
-        <!-- side bar -->  
-        <div class="sidenav border pl-2">
-            <p>Subtotal (1 item) $29.99</p>
-            <p>Delivery Free</p>
-            <p>Taxes and fees - -</p>
-            <p>(calculated in checkout)</p>
-            <br>
-            <br>
-            <p>Est. total $29.99</p>
-            <button>Check out</button>
-          </div>         
+                <div class="row pl-2">
+                    <div class="col border">
+                        <h2>Your cart: 3 items</h2>
+                        <p>My whole order is a gift</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3 ">
+                        <img src="images/imagesHome/eggItems/eggs1.jpeg">
+                    </div>
+                    <div class="col-xs-9 col-sm-6 col-md-6 col-lg-6">
+                        <h3>Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h3>
+                        <p5>Sold & shipped by MGR fantastic Deals Inc.</p5>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">This item is a gift</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Allow substitution</label>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <input type="number" value="1" min="0" max="100" step="1"/>
+                            </div>
+                            <div class="col">
+                                <h5>Delete</h5>
+                            </div>
+                            <div class="col">
+                                <h5>Save for later</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3 ">
+                        <img src="images/imagesHome/eggItems/eggs1.jpeg">
+                    </div>
+                    <div class="col-xs-9 col-sm-6 col-md-6 col-lg-6">
+                        <h3>Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h3>
+                        <p5>Sold & shipped by MGR fantastic Deals Inc.</p5>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">This item is a gift</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Allow substitution</label>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <input type="number" value="1" min="0" max="100" step="1"/>
+                            </div>
+                            <div class="col">
+                                <h5>Delete</h5>
+                            </div>
+                            <div class="col">
+                                <h5>Save for later</h5>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3 ">
+                        <img src="images/imagesLeggingsSearchPage/yogaliciouslegging.jpeg">
+                    </div>
+                    <div class="col-xs-9 col-sm-6 col-md-6 col-lg-6">
+                        <h3>Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h3>
+                        <p5>Sold & shipped by MGR fantastic Deals Inc.</p5>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">This item is a gift</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Allow substitution</label>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <input type="number" value="1" min="0" max="100" step="1"/>
+                            </div>
+                            <div class="col">
+                                <h5>Delete</h5>
+                            </div>
+                            <div class="col">
+                                <h5>Save for later</h5>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+
+    
+
+
+            </div>
+                <div class="col"></div>
+                <!-- side bar -->  
+                <div class="border pl-2">
+                    <p>Subtotal (1 item) $29.99</p>
+                    <p>Delivery Free</p>
+                    <p>Taxes and fees - -</p>
+                    <p>(calculated in checkout)</p>
+                    <br>
+                    <br>
+                    <p>Est. total $29.99</p>
+                    <a class="btn button1" href="checkout.html" role="button">Check out</a>
+                </div>  
+                </div>
+            </div>
+        </div>       
     </div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+<script src="./src/bootstrap-input-spinner.js"></script>
+<script>
+    $("input[type='number']").inputSpinner({
+        buttonsWidth: '5rem',
+        groupClass: 'input-group-lg',
+        textAlign: 'center',
+        buttonsClass: 'button-success',
+        decrementButton: '<b>&lt;</b>',
+        incrementButton: '<b>&gt;</b>'
+    })
+</script>
 
 </body>
 <!-- footer. Let's get all of the content here first, then finess styling and layout-->
