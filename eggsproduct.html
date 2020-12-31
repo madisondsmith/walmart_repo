@@ -6,6 +6,7 @@
     <!-- css/stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Walmart.com | Save Money. Live Better</title>
 </head>
@@ -99,12 +100,23 @@
 
                 <div class="row">
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs1.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h5>
-                            <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5>
+                            <h5 class="product-title">Alfresco Eggs: Pasture Raised Eggs, 1.5 Dz</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
                             <p class="lead"><strong>$29.99</strong></p>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -112,19 +124,57 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>2-day delivery</h5>
-                            <button class="button1">Get</button>
+                            <!-- modal begin -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      ...
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- end modal -->
+                            <div class="get">
+                                <button type="button" class="button1" id="get-btn" data-toggle="modal" data-target="#get-modal">Get</button>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Launch demo modal
+                              </button>
+                              
+                            
+
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs2.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <button id="swapHeart" class="btn btn-default swap">
-                                <span class="glyphicon glyphicon-heart-empty"></span>
-                            </button>
-                            <h5>Vital Farms: Pasture-raised Eggs, 0.5 Dz</h5>
-                            <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5>
+                            <h5 class="product-title">Vital Farms: Pasture-raised Eggs, 0.5 Dz</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
                             <p class="lead"><strong>$23.99</strong></p>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -132,16 +182,27 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs3.png" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Vital Farms Pasture Raised Large Brown Grade A Eggs, 12 Count</h5>
-                            <h5>Walmart # 554135648</h5>
+                            <h5 class="product-title">Vital Farms Pasture Raised Large Brown Grade A Eggs, 12 Count</h5>
+                            <!-- <h5>Walmart # 554135648</h5> -->
                             <p class="lead"><strong>$5.48</strong></p>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -149,15 +210,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs4.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Jovial 100% Organic Gluten Free Brown Rice Pasta, Tagliatelle, 4 Count</h5>
+                            <h5 class="product-title">Jovial 100% Organic Gluten Free Brown Rice Pasta, Tagliatelle, 4 Count</h5>
                             <p class="lead"><strong>$67.77</strong></p>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -165,15 +237,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs5.png" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Great Lakes Gelatin, Certified Paleo Friendly, Pasture-Raised Grass-Fed, Collagen Hydrolysate, Peptides, Single Serve Packets, 20 Packets</h5>
+                            <h5 class="product-title">Great Lakes Gelatin, Certified Paleo Friendly, Pasture-Raised Grass-Fed, Collagen Hydrolysate, Peptides, Single Serve Packets, 20 Packets</h5>
                             
                             <p class="lead"><strong>$24.99</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -182,15 +265,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs6.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Handsome Brook Farm Eggs - Organic, Pasture Raised</h5>
+                            <h5 class="product-title">Handsome Brook Farm Eggs - Organic, Pasture Raised</h5>
                             
                             <p class="lead"><strong>$5.48</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -202,15 +296,26 @@
                             <div>
                                 <i class="heart fa fa-heart-o"></i>
                               </div>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs7.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Marketside Large Cage Free Brown Eggs, 12 Count</h5>
+                            <h5 class="product-title">Marketside Large Cage Free Brown Eggs, 12 Count</h5>
                             
                             <p class="lead"><strong>$2.48</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -219,15 +324,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs8.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>FARMHOUSE EGGS Cage Free Large Brown Grade A Eggs, 18 Count</h5>
+                            <h5 class="product-title">FARMHOUSE EGGS Cage Free Large Brown Grade A Eggs, 18 Count</h5>
                             
                             <p class="lead"><strong>$4.13</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -236,15 +352,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs9.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Marketside Organic Cage Free Brown Eggs, Large, 12 Count</h5>
+                            <h5 class="product-title">Marketside Organic Cage Free Brown Eggs, Large, 12 Count</h5>
                             
                             <p class="lead"><strong>$3.48</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -253,15 +380,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs10.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Eggland's Best Farm Fresh Organic Large, Brown, Grade A Eggs, 12ct.</h5>
+                            <h5 class="product-title">Eggland's Best Farm Fresh Organic Large, Brown, Grade A Eggs, 12ct.</h5>
                             
                             <p class="lead"><strong>$4.67</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -270,25 +408,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <div>
-                                <span class="star glyphicon glyphicon-star-empty"></span>
-                              </div>
-                              
-                              <br/>
-                              
-                              <div>
-                                <i class="heart fa fa-heart-o"></i>
-                              </div>
-                              
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs11.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Great Value Large White Eggs, 18 Count</h5>
+                            <h5 class="product-title">Great Value Large White Eggs, 18 Count</h5>
                             
                             <p class="lead"><strong>$1.65</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -297,18 +436,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button id="swapHeart" class="btn btn-default swap">
-                                <span class="glyphicon glyphicon-heart-empty"></span>
-                            </button>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs12.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Great Value Large White Eggs Value Pack, 36 Count</h5>
+                            <h5 class="product-title">Great Value Large White Eggs Value Pack, 36 Count</h5>
                             
                             <p class="lead"><strong>$3.48</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -317,15 +464,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs13.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Great Value Large White Eggs Value Pack, 18 Count</h5>
+                            <h5 class="product-title">Great Value Large White Eggs Value Pack, 18 Count</h5>
                             
                             <p class="lead"><strong>$1.48</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -334,15 +492,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs14.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Great Value Large White Eggs, 60 Count</h5>
+                            <h5 class="product-title">Great Value Large White Eggs, 60 Count</h5>
                             
                             <p class="lead"><strong>$5.74</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -351,15 +520,26 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesHome/eggItems/eggs15.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h5>Great Value Jumbo White Eggs, 12 Count</h5>
+                            <h5 class="product-title">Great Value Jumbo White Eggs, 12 Count</h5>
                             
                             <p class="lead"><strong>$1.48</strong></p>
                             <span class="fa fa-star checked"></span>
@@ -368,7 +548,7 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <h5>Free delivery</h5>
-                            <button class="button1">Get</button>
+                            <button class="button1" id="get-btn">Get</button>
                         </div>
                     </div>
 
@@ -381,7 +561,7 @@
         
         </section>
 
-        <!-- Modal + Trigger -- This is something I am testing with-->
+        <!-- Modal + Trigger -- This is something I am testing with
 
     <div class="container">
         <div class="row">
@@ -431,6 +611,7 @@
     </div>
     <div class="clear"></div>
     </div>
+ -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

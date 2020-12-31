@@ -1094,3 +1094,44 @@ input[type=text] {
 #cart3 {
   max-height: 30px;
 }
+
+.heart {
+  float: right;
+  display: inline-block;
+}
+
+#swapHeart {
+  font-size: 14px;
+  font-size: .875rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 20px;
+  border: 0;
+  border-radius: 20px;
+  background-color:darkred;
+}
+
+.product-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+#get-btn {
+  font-size: 13px;
+  font-size: .875rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 30px;
+  width: 80px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #0071ce;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+  float: left;
+  /* width: 100%; */
+}
+
+
