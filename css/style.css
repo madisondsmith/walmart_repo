@@ -168,6 +168,8 @@ h6 {
   margin-top: -11px;
 }
 
+
+
 /** grey checkout form */
 
 
@@ -380,6 +382,8 @@ h6 {
   border-radius: 0px, 50px, 0px, 50px;
 }
 
+
+
 /* Steps */
 .step {
   position: relative;
@@ -404,6 +408,8 @@ h6 {
   background-color: #4285f4;
 }
 
+
+
 /* Circle */
 .circle {
   background: gray;
@@ -416,6 +422,8 @@ h6 {
   text-align: center;
   box-shadow: 0 0 0 3px #fff;
 }
+
+
 
 /* Vertical Line */
 .circle:after {
@@ -442,6 +450,7 @@ h6 {
 .shade {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
 }
+
 
 /* Stepper Titles */
 .title {
@@ -487,36 +496,16 @@ h6 {
    padding: 0px 10px;
  }
 
-  
- .sidebar {
-    margin: ;
-    padding: ;
- }
-  
- .footer {
-    margin: ;
-    padding: ;
- }
 
- .jumbotron {
-  background-image: url("../img/jumbotron_bg.jpg");
-  background-size: cover;
-}
 
 /** sidebar css */
 
 .clear{
   clear:both;
   } 
-  .main2{
-  
-  }
-  .top {
-  
-  }
 
   .left {
-  float:left;
+  float: left;
   }
 
   .right{
@@ -987,6 +976,8 @@ button > span {
   float: right;
 }
 
+
+
 /* sign in/ sign up styles */
 #sign-in-widget {
   text-align: center;
@@ -1039,6 +1030,7 @@ button > span {
   transition-timing-function: ease-out;
   width: 100%;
 }
+
 
 /** Search bar with auto fill */
 input {
