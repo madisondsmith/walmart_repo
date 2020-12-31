@@ -380,14 +380,63 @@
 
         
         </section>
+
+        <!-- Modal + Trigger -- This is something I am testing with-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Learning how to use a Modal</h1>
+                <p class="text-center"><a href="#" data-toggle="modal" role="button" data-target="#login-modal" class="btn btn-primary btn-lg">login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="login-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3>Please login to continue to add to cart</h3>
+                </div>
+                <div id="div-forms">
+                    <form>
+                        <div class="modal-body">
+                        <div>
+                            <span>Type your email and password here:</span>
+                        </div>
+                        <input class="form-control" placeholder="Email" type="text" required>
+                        <input class="form-control" placeholder="Password" type="password" required>
+                        <div class="checkbox">
+                        <label>
+                            <input type="checkbox">Remember me
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </div>
     <div class="clear"></div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
-    
+
 </body>
 
 
