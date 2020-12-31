@@ -545,7 +545,7 @@ form {
   text-align: center;
   box-sizing: border-box;
   margin-top: 32px;
-  max-width: 320px;
+  max-width: 395px;
 }
 
 @media only screen and (min-width: 30em) {
@@ -587,8 +587,14 @@ form {
   color: #fff;
   font-weight: 700;
   white-space: nowrap;
-  transition-property: background-color,border-color,color;
-  transition-duration: .12s;
-  transition-timing-function: ease-out;
   width: 100%;
 }
+
+.input-text {
+  font-size: 16px;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #cb2c90;
