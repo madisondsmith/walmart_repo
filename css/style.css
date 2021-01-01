@@ -175,7 +175,7 @@ h6 {
 
 #heading {
   text-transform: uppercase;
-  color: #673AB7;
+  color: #4285f4;
   font-weight: normal
 }
 
@@ -225,13 +225,13 @@ h6 {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 1px solid #673AB7;
+  border: 1px solid #4285f4;
   outline-width: 0
 }
 
 #msform .action-button {
   width: 100px;
-  background: #673AB7;
+  background: #4285f4;
   font-weight: bold;
   color: white;
   border: 0 none;
@@ -244,7 +244,7 @@ h6 {
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-  background-color: #311B92
+  background-color: #4285f4;
 }
 
 #msform .action-button-previous {
@@ -257,31 +257,31 @@ h6 {
   cursor: pointer;
   padding: 10px 5px;
   margin: 10px 5px 10px 0px;
-  float: right
+  float: right;
 }
 
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
-  background-color: #000000
+  background-color: #000000;
 }
 
 .card {
   z-index: 0;
   border: none;
-  position: relative
+  position: relative;
 }
 
 .fs-title {
   font-size: 25px;
-  color: #673AB7;
+  color: #4285f4;
   margin-bottom: 15px;
   font-weight: normal;
-  text-align: left
+  text-align: left;
 }
 
 .purple-text {
-  color: #673AB7;
-  font-weight: normal
+  color: #4285f4;
+  font-weight: normal;
 }
 
 .steps {
@@ -289,22 +289,22 @@ h6 {
   color: gray;
   margin-bottom: 10px;
   font-weight: normal;
-  text-align: right
+  text-align: right;
 }
 
 .fieldlabels {
   color: gray;
-  text-align: left
+  text-align: left;
 }
 
 #progressbar {
   margin-bottom: 30px;
   overflow: hidden;
-  color: lightgrey
+  color: lightgrey;
 }
 
 #progressbar .active {
-  color: #673AB7
+  color: #4285f4;
 }
 
 #progressbar li {
@@ -313,22 +313,22 @@ h6 {
   width: 25%;
   float: left;
   position: relative;
-  font-weight: 400
+  font-weight: 400;
 }
 
 #progressbar #account:before {
   font-family: FontAwesome;
-  content: "\f13e"
+  content: "\f00c"
 }
 
 #progressbar #personal:before {
   font-family: FontAwesome;
-  content: "\f007"
+  content: "\f00c"
 }
 
 #progressbar #payment:before {
   font-family: FontAwesome;
-  content: "\f030"
+  content: "\f00c"
 }
 
 #progressbar #confirm:before {
@@ -362,7 +362,7 @@ h6 {
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-  background: #673AB7
+  background: #4285f4;
 }
 
 .progress {
@@ -370,12 +370,12 @@ h6 {
 }
 
 .progress-bar {
-  background-color: #673AB7
+  background-color: #4285f4;
 }
 
 .fit-image {
   width: 100%;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .input-group-append {
@@ -391,7 +391,7 @@ h6 {
   color: gray;
 }
 .step + .step {
-  margin-top: 1.5em
+  margin-top: 1.5em;
 }
 .step > div:first-child {
   position: static;
@@ -402,7 +402,7 @@ h6 {
   padding-left: 1em;
 }
 .step.step-active {
-  color: #4285f4
+  color: #4285f4;
 }
 .step.step-active .circle {
   background-color: #4285f4;
