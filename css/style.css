@@ -1097,7 +1097,6 @@ input[type=text] {
 
 .heart {
   float: right;
-  display: inline-block;
 }
 
 #swapHeart {
@@ -1134,4 +1133,19 @@ input[type=text] {
   /* width: 100%; */
 }
 
+#modal-close-cross {
+  width: ;
+  
+}
 
+.modal-footer {
+  flex-wrap: nowrap !important;
+}
+
+#modal-close-btn {
+  width: 67px;
+}
+
+#modal-confirm-btn {
+  width: 127px;
+}
