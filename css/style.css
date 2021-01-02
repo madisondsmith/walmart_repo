@@ -37,7 +37,19 @@ h6 {
 .tall {
   height: 60px;
 }
-/** vertical process flow */
+
+.stay {
+  position: fixed;
+}
+
+.newAddressBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/** vertical process flow 
 
 .bs-vertical-wizard {
   border-right: 1px solid #eaecf1;
@@ -168,14 +180,14 @@ h6 {
   margin-top: -11px;
 }
 
+*/
 
-
-/** grey checkout form */
+/** grey checkout form 
 
 
 #heading {
   text-transform: uppercase;
-  color: #673AB7;
+  color: #4285f4;
   font-weight: normal
 }
 
@@ -225,13 +237,13 @@ h6 {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 1px solid #673AB7;
+  border: 1px solid #4285f4;
   outline-width: 0
 }
 
 #msform .action-button {
   width: 100px;
-  background: #673AB7;
+  background: #4285f4;
   font-weight: bold;
   color: white;
   border: 0 none;
@@ -244,7 +256,7 @@ h6 {
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-  background-color: #311B92
+  background-color: #4285f4;
 }
 
 #msform .action-button-previous {
@@ -257,31 +269,31 @@ h6 {
   cursor: pointer;
   padding: 10px 5px;
   margin: 10px 5px 10px 0px;
-  float: right
+  float: right;
 }
 
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
-  background-color: #000000
+  background-color: #000000;
 }
 
 .card {
   z-index: 0;
   border: none;
-  position: relative
+  position: relative;
 }
 
 .fs-title {
   font-size: 25px;
-  color: #673AB7;
+  color: #4285f4;
   margin-bottom: 15px;
   font-weight: normal;
-  text-align: left
+  text-align: left;
 }
 
 .purple-text {
-  color: #673AB7;
-  font-weight: normal
+  color: #4285f4;
+  font-weight: normal;
 }
 
 .steps {
@@ -289,22 +301,22 @@ h6 {
   color: gray;
   margin-bottom: 10px;
   font-weight: normal;
-  text-align: right
+  text-align: right;
 }
 
 .fieldlabels {
   color: gray;
-  text-align: left
+  text-align: left;
 }
 
 #progressbar {
   margin-bottom: 30px;
   overflow: hidden;
-  color: lightgrey
+  color: lightgrey;
 }
 
 #progressbar .active {
-  color: #673AB7
+  color: #4285f4;
 }
 
 #progressbar li {
@@ -313,22 +325,22 @@ h6 {
   width: 25%;
   float: left;
   position: relative;
-  font-weight: 400
+  font-weight: 400;
 }
 
 #progressbar #account:before {
   font-family: FontAwesome;
-  content: "\f13e"
+  content: "\f00c"
 }
 
 #progressbar #personal:before {
   font-family: FontAwesome;
-  content: "\f007"
+  content: "\f00c"
 }
 
 #progressbar #payment:before {
   font-family: FontAwesome;
-  content: "\f030"
+  content: "\f00c"
 }
 
 #progressbar #confirm:before {
@@ -362,7 +374,7 @@ h6 {
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-  background: #673AB7
+  background: #4285f4;
 }
 
 .progress {
@@ -370,28 +382,28 @@ h6 {
 }
 
 .progress-bar {
-  background-color: #673AB7
+  background-color: #4285f4;
 }
 
 .fit-image {
   width: 100%;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .input-group-append {
   border-radius: 0px, 50px, 0px, 50px;
 }
 
+*/
 
-
-/* Steps */
+/* Steps 
 .step {
   position: relative;
   min-height: 1em;
   color: gray;
 }
 .step + .step {
-  margin-top: 1.5em
+  margin-top: 1.5em;
 }
 .step > div:first-child {
   position: static;
@@ -402,13 +414,13 @@ h6 {
   padding-left: 1em;
 }
 .step.step-active {
-  color: #4285f4
+  color: #4285f4;
 }
 .step.step-active .circle {
   background-color: #4285f4;
 }
 
-
+*/
 
 /* Circle */
 .circle {
@@ -607,16 +619,14 @@ h6 {
     background-color: rgb(0,101,255);
     color: white;
     border: none;
-    width: ;
     height: 40px;
-    padding: ;
     text-align: center;
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    display: ;
+ 
     font-size: 16px;
-    transition-duration: ;
+
     cursor: pointer;
  }
 
@@ -626,24 +636,8 @@ h6 {
  }
 
  .button2 {
-    border-radius: ;
-    background-color: ;
     color: black;
-    width: ;
-    height: ;
-    border: ;
-    padding: ;
-    text-align: ;
-    text-decoration: ;
-    display: ;
-    font-size: ;
-    transition-duration: ;
     cursor: pointer;
- }
-  
- .button2:hover {
-    background-color: ;
-    color: ;
  }
 
  .button3 {
@@ -656,17 +650,9 @@ h6 {
 }
  
  .disabled {
-    opacity: ;
     cursor: not-allowed;
  }
 
- /** Heart Button */
-
-
- .heart {
-  font-size: 25px;
-	color:red;
-}
 
  /*only for centering on the page
 .btn {
@@ -1161,6 +1147,217 @@ input[type=text] {
 #modal-confirm-btn {
   width: 127px;
 }
+
+
+
+/* This is for the checkout process */
+
+
+#heading {
+  text-transform: uppercase;
+  color: #4285f4;
+  font-weight: normal
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-card {
+  text-align: left;
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  background-color: #ECEFF1;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #4285f4;
+  outline-width: 0;
+}
+
+#msform .action-button {
+  width: 100px;
+  background: #4285f4;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  background-color: #311B92;
+}
+
+#msform .action-button-previous {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  background-color: #000000;
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative;
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #4285f4;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.purple-text {
+  color: #4285f4;
+  font-weight: normal;
+}
+
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .active {
+  color: #4285f4;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #4285f4;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #4285f4;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
 
 /* On mouse-over, add a grey background color */
 .custom-radio:hover .custom-control-input ~ .custom-control-label::before {
