@@ -1153,3 +1153,14 @@ input[type=text] {
 #modal-confirm-btn {
   width: 127px;
 }
+
+/* On mouse-over, add a grey background color */
+.custom-radio:hover .custom-control-input ~ .custom-control-label::before {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a walmart-pink background */
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+  background-color: #eb148d;
+  border-radius: 100%;
+}
