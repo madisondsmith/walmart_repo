@@ -594,13 +594,14 @@ h6 {
  /** Button Styles
  Button1 is the blue buttons
  Button2 is the buttons with a black border
+ button3 "add to cart"
  Add another if I missed something
   */
 
 .input-group.md-form.form-sm.form-2 input {
  border-radius: 20px;
  }
-  
+
  .button1 {
     border-radius: 50px;
     background-color: rgb(0,101,255);
@@ -619,13 +620,11 @@ h6 {
     cursor: pointer;
  }
 
-
-  
  .button1:hover {
     background-color: rgb(127,178,255);
     color: white;
  }
-  
+
  .button2 {
     border-radius: ;
     background-color: ;
@@ -646,7 +645,16 @@ h6 {
     background-color: ;
     color: ;
  }
-  
+
+ .button3 {
+  border-radius: 50px;
+  background-color: rgb(0, 101, 255);
+  color: white;
+  height: 40px;
+  font-size: 16px;
+  width: 150px;
+}
+ 
  .disabled {
     opacity: ;
     cursor: not-allowed;
@@ -1097,7 +1105,6 @@ input[type=text] {
 
 .heart {
   float: right;
-  display: inline-block;
 }
 
 #swapHeart {
@@ -1134,4 +1141,34 @@ input[type=text] {
   /* width: 100%; */
 }
 
+#modal-close-cross {
+  width: 12%;
+}
 
+.form-check-input:checked {
+  background-color: #0071ce;
+  border-color: #0071ce;
+}
+
+.modal-footer {
+  flex-wrap: nowrap !important;
+}
+
+#modal-close-btn {
+  width: 67px;
+}
+
+#modal-confirm-btn {
+  width: 127px;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio:hover .custom-control-input ~ .custom-control-label::before {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a walmart-pink background */
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+  background-color: #eb148d;
+  border-radius: 100%;
+}
