@@ -33,7 +33,6 @@ h6 {
     font-size: 12px;
 }
 
-
 .tall {
   height: 60px;
 }
@@ -48,7 +47,6 @@ h6 {
   justify-content: center;
 }
 
-
 .fit-image {
   width: 100%;
   object-fit: cover;
@@ -57,8 +55,6 @@ h6 {
 .input-group-append {
   border-radius: 0px, 50px, 0px, 50px;
 }
-
-
 
 /* Steps 
 .step {
@@ -99,7 +95,6 @@ h6 {
   box-shadow: 0 0 0 3px #fff;
 }
 
-
 /* Vertical Line */
 .circle:after {
   content: ' ';
@@ -125,7 +120,6 @@ h6 {
 .shade {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
 }
-
 
 /* Stepper Titles */
 .title {
@@ -171,8 +165,6 @@ h6 {
    padding: 0px 10px;
  }
 
-
-
 /** sidebar css */
 
 .clear{
@@ -187,14 +179,12 @@ h6 {
   float: right;
   }
   
-
 /** Star Rating
 */
 
 .checked {
   color: orange;
 }
-
 
 /** sign in form
 */
@@ -265,7 +255,6 @@ h6 {
    }
  }
  
-
  /** Button Styles
  Button1 is the blue buttons
  Button2 is the buttons with a black border
@@ -287,9 +276,7 @@ h6 {
     text-decoration: none;
     align-items: center;
     justify-content: center;
- 
     font-size: 16px;
-
     cursor: pointer;
  }
 
@@ -315,7 +302,6 @@ h6 {
  .disabled {
     cursor: not-allowed;
  }
-
 
  /*only for centering on the page
 .btn {
@@ -387,7 +373,6 @@ button > span {
   align-items: flex-start;
   padding-bottom: 48px;
   margin-left: 56px;
-
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
 }
@@ -495,7 +480,6 @@ button > span {
  .btn-link {
    color: black;
    font-size: 12px;
-   
    height: auto;
  }
 
@@ -539,6 +523,11 @@ button > span {
   color: black;
   width: 100%;
   margin-left: 40px;
+ }
+
+ .logo-size {
+   max-width: 120px;
+   height: auto;
  }
 
  @media only screen and (max-width: 599px) {
@@ -640,8 +629,6 @@ button > span {
   float: right;
 }
 
-
-
 /* sign in/ sign up styles */
 #sign-in-widget {
   text-align: center;
@@ -704,7 +691,6 @@ input[type=text] {
   width: 100%;
 }
 
-
 .autocomplete-items {
   position: absolute;
   border-bottom: none;
@@ -740,9 +726,6 @@ input[type=text] {
 }
 
 #topHeader {
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 100px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -797,6 +780,34 @@ input[type=text] {
   /* width: 100%; */
 }
 
+.btn-cToggle {
+  border: 1px solid black;
+  padding-left: 4px;
+  padding-right: 2px;
+  background-color: transparent;
+  color: black;
+  width: auto;
+  margin-bottom: 10;
+}
+
+.delivery-cart {
+  border: 3px solid;
+  border-color: #76c043;
+  border-radius: 8px;
+  min-height: 150px;
+  padding-top: 10px
+}
+
+.inline-display {
+  display: inline-block;
+}
+
+hr.style-six {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
 .modal-body {
   padding-left: 1.5rem;
 }
@@ -818,6 +829,9 @@ input[type=text] {
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
   background-color: #eb148d;
   border-radius: 100%;
+}
+
+.form-check {
 }
 
 .modal-footer {
@@ -855,21 +869,18 @@ input[type=text] {
   float: right;
 }
 
-
-
 /* This is for the checkout process */
-
 
 #heading {
   text-transform: uppercase;
   color: #4285f4;
-  font-weight: normal
+  font-weight: normal;
 }
 
 #msform {
   text-align: center;
   position: relative;
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 #msform fieldset {
@@ -1102,6 +1113,13 @@ input[type=text] {
   width: 400px;
 }
 
+.btn-pay {
+   background-color:  #e7ac09;
+   border: none;
+   font-weight: bold;
+   letter-spacing: 2px;
+}
+
 @media screen and (max-width: 420px){
   .card-grp {
    flex-direction: column;
@@ -1176,4 +1194,48 @@ input[type=text] {
 .paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
 	border-color: #4cd264;
 	outline: none !important;
+}
+
+
+.payment-select {
+  border: 1px solid black;
+  margin: 1px 2px 1px 2px;
+}
+
+.payment-select::selection {
+  border: 3px solid #4285f4;
+}
+
+/* test area for add to cart animation */
+
+.wrapper {
+  width: 705px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.item {
+  background-color: white;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 205px;
+  padding: 10px;
+}
+
+.button3 {
+  border: 1px solid #007dc6;
+  padding: 4px 14px;
+  background-color: #007dc6;
+  color: white;
+  text-transform: uppercase;
+  flex: right;
+  margin: 5px 0;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 50px; 
+}
+
+.shopping-cart {
+  display: inline-block;
+  
 }
