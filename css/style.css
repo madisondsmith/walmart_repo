@@ -387,7 +387,6 @@ button > span {
   align-items: flex-start;
   padding-bottom: 48px;
   margin-left: 56px;
-
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
 }
@@ -495,7 +494,6 @@ button > span {
  .btn-link {
    color: black;
    font-size: 12px;
-   
    height: auto;
  }
 
@@ -539,6 +537,11 @@ button > span {
   color: black;
   width: 100%;
   margin-left: 40px;
+ }
+
+ .logo-size {
+   max-width: 120px;
+   height: auto;
  }
 
  @media only screen and (max-width: 599px) {
@@ -740,9 +743,6 @@ input[type=text] {
 }
 
 #topHeader {
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 100px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -797,6 +797,35 @@ input[type=text] {
   /* width: 100%; */
 }
 
+.btn-cToggle {
+  border: 1px solid black;
+  padding-left: 4px;
+  padding-right: 2px;
+  background-color: transparent;
+  color: black;
+  width: auto;
+  margin-bottom: 10;
+}
+
+.delivery-cart {
+  border: 3px solid;
+  border-color: #76c043;
+  border-radius: 8px;
+  min-height: 150px;
+  padding-top: 10px
+}
+
+.inline-display {
+  display: inline-block;
+}
+
+hr.style-six {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 #modal-close-cross {
   width: 12%;
 }
@@ -804,6 +833,10 @@ input[type=text] {
 .form-check-input:checked {
   background-color: #0071ce;
   border-color: #0071ce;
+}
+
+.form-check {
+  
 }
 
 .modal-footer {
@@ -1068,6 +1101,13 @@ input[type=text] {
   width: 400px;
 }
 
+.btn-pay {
+   background-color:  #e7ac09;
+   border: none;
+   font-weight: bold;
+   letter-spacing: 2px;
+}
+
 @media screen and (max-width: 420px){
   .card-grp {
    flex-direction: column;
@@ -1142,4 +1182,47 @@ input[type=text] {
 .paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
 	border-color: #4cd264;
 	outline: none !important;
+}
+
+.payment-select {
+  border: 1px solid black;
+  margin: 1px 2px 1px 2px;
+}
+
+.payment-select::selection {
+  border: 3px solid #4285f4;
+}
+
+/* test area for add to cart animation */
+
+.wrapper {
+  width: 705px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.item {
+  background-color: white;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 205px;
+  padding: 10px;
+}
+
+.button3 {
+  border: 1px solid #007dc6;
+  padding: 4px 14px;
+  background-color: #007dc6;
+  color: white;
+  text-transform: uppercase;
+  flex: right;
+  margin: 5px 0;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 50px; 
+}
+
+.shopping-cart {
+  display: inline-block;
+  
 }
