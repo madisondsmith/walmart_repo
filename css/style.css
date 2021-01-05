@@ -703,15 +703,12 @@ input[type=text] {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .autocomplete {
   min-width: 105px;
   width: 100%;
   margin: 0 auto;
 }
 
-=======
->>>>>>> master
 .autocomplete-items {
   position: absolute;
   border-bottom: none;
@@ -951,6 +948,7 @@ hr.style-six {
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .modal-body {
   padding-left: 1.5rem;
@@ -976,6 +974,7 @@ hr.style-six {
 }
 
 .form-check {
+  
 }
 
 .modal-footer {
