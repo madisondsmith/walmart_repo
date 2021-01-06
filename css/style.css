@@ -711,15 +711,12 @@ input[type=text] {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .autocomplete {
   min-width: 105px;
   width: 100%;
   margin: 0 auto;
 }
 
-=======
->>>>>>> master
 .autocomplete-items {
   position: absolute;
   border-bottom: none;
@@ -755,9 +752,8 @@ input[type=text] {
 }
 
 @media only screen and (max-width: 575px) {
-  .col-6 {
+  .col-6{
       /* width: 100% !important; */
-      justify-content: center;
   }
 }
 
@@ -767,13 +763,18 @@ input[type=text] {
   }
 }
 
-.nav-icons {
-  padding-left: 40px;
+@media only screen and (max-width: 575px) {
+  .nav-icons {
+      
+  }
+}
 
+.nav-icons {
+  
 }
 
 .icon {
-  padding: 10px !important;
+  padding-top: 8px !important;
 }
 
 #topHeader {
@@ -812,13 +813,31 @@ input[type=text] {
   transition: translateZ(0);
 }
 
-@media only screen and (max-width: 644px) {
-  .spark {
+@media only screen and (max-width: 709px) {
+  .spark-logo {
       display: none;
   }
 }
 
-.spark {
+.spark-logo {
+  padding-top: 15px;
+  width: 100px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 710px) {
+  .spark-only {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .spark-only {
+      position: absolute;
+  }
+}
+
+.spark-only {
   padding-top: 15px;
   width: 100px;
   height: 40px;
@@ -859,6 +878,12 @@ input[type=text] {
   max-height: 20px;
   max-width: 20px;
   width: 100%;
+}
+
+@media only screen and (max-width: 644px) {
+  .ad-banner {
+      display: none;
+  }
 }
 
 .ad-banner {
@@ -1426,12 +1451,34 @@ label {
   padding: 4px 14px;
   background-color: #007dc6;
   color: white;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   flex: right;
   margin: 5px 0;
   font-weight: 400;
   cursor: pointer;
   border-radius: 50px; 
+}
+
+#btn-3 {
+  font-size: 13px;
+  font-size: .875rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 30px;
+  width: 120px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #e33798;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+  float: left;
+  /* width: 100%; */
+}
+
+.item .hide-image {
+  display: none;
 }
 
 .shopping-cart {
