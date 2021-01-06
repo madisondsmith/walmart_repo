@@ -13,7 +13,7 @@
 <body>
  <!-- grid / fill in image + text. Don't worry about the headings or varying rows-->
 
- <header>
+<header>
     <!-- begin new header
     <div id="topHeader" class="container-fluid dblue pt-3">
         <div class="row mx-2 mt-2">
@@ -101,95 +101,100 @@
 
 </header>
 
-<div class="col text-center text-white justify-content-center ad-banner" style="background-color: #0071ce;">
-    <p><img class="w-logo" src="images/imagesHome/wpluslogo.png" alt="Walmart+">New! Free shipping, no order min. Restriction apply <a class="text-white" href="#">Learn More</a></p>
-</div>
 <div class="row">
     <div class="col">
-        <h6 class="text-muted">Clothing/leggings   (See results in All departments)</h6>
+        <h6 class="text-muted px-3 py-3">Home Page/Clothing/Womens Clothing/Womens Pants & Leggings/Womens Leggings</h6>
     </div>
 </div>
 <div class="row">
-    <div class="col">
-        <h6>1 - 15 results</h6>
+    <div class="col align-items-start">
+        <h2 class="col-sm mt-0 px-3 py-1"><strong><img src="images/imagesCart/confirm-check.png" alt="checkmark">You just added 1 item</strong>
+            ( <a href="cart.html">3 items in cart</a> )
+        </h2>
     </div>
 </div>
-
-    <!-- left side bar-->
-    <div class="left col-3 pl-5">
+<!-- begin item added confirm -->
+<div class="row px-3 py-3">
+    <div class="col px-3 py-3">                                                                           
         <div class="row">
-        <h6><strong>Gifting</strong></h6>
-        <hr>
-        </div>
+            <div class="col-xs item">
+                <img src="images/imagesLeggingsSearchPage/yogaliciouslegging.jpeg" alt="yogalicious legging" class="img-fluid w-100 bb">
+            </div>
+            <div class="col-lg">
+                <div class="row">
+                    <h4 class="flush product-title-item-added">Women's Active Nude teck High Rise Side Pocket Ankle</h4>
+                </div>
+                <div class="row">
+                    <div class="#">
+                        <small class="text-muted">$10.96</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="qty-control">
+                        <small class="text-muted">Qty 1</small>
+                    </span> 
+                </div>                                                                     
+            </div>                                                                            
+        </div>   
+    </div>
+    <div class="col px-3 py-3 pr-5">                                                                           
         <div class="row">
-            <h6><strong>Category</strong></h6>
-        </div>
-            <hr>
-            <h6>Clothing</h6>
-            <p class="pl-5">
-                <ul>
-                    <li>
-                        Womens Leggings
+            <div class="col-sm item">
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Subtotal</h6>
+                            <small class="text-muted">(3 items)</small>
+                        </div>
+                        <span class="text-muted">$40.00</span>
                     </li>
-                    <li>
-                        Womens Activewear
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Delivery</h6>
+                            <small class="text-muted">(2-day Shipping)</small>
+                        </div>
+                        <span class="text-muted">$5.99</span>
                     </li>
-                    <li>
-                        Leggings, Pants & Capris
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Taxes and Fees</h6>
+                            <small class="text-muted">Calculated in checkout</small>
+                        </div>
+                        <span class="text-muted">--</span>
                     </li>
-                    <li>
-                        Womens Pluss Leggings
-                    </li>
-                    <li>
-                        Back to School Clothing
-                    </li>
-                    <li>
-                        Bags & Accessories
-                    </li>
-                    <li>
-                        Big & Tall
-                    </li>
-                    <li>
-                        Juniors Plus
-                    </li>
-                    <li>
-                        Kids Clothing
-                    </li>
-                    <li>
-                        Maternity Clothing
-                    </li>
-                    <li>
-                        Maternity Plus
-                    </li>
-                    <li>
-                        Mens Clothing
-                    </li>
-                    <li>
-                        Pre-Owned
-                    </li>
-                    <li>
-                        Premium Beauty
-                    </li>
-                    <li>
-                        Scrubs
-                    </li>
-                    <li>
-                        Shoes
-                    </li>
-                    <li>
-                        Womens Petite
-                    </li>
-                    <li>
-                        Womens Petite Plus
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div class="cart-total">
+                            <span>Total (USD)</span>
+                            <strong class="cart-total-price">$45.99</strong>
+                        </div>
                     </li>
                 </ul>
-            </p>
-            <p>See All Departments</p>
-            <hr>
-        </div>
+            </div>
+            <div class="col-sm">
+                <div class="row-lg">
+                    <a href="cart.html">
+                        <button type="button" class="button1" id="view-cart-btn" data-toggle="modal" data-target="#">View cart</button>
+                    </a>
+                </div>
+                <div class="row-lg">
+                    <a href="checkout.html">
+                        <button type="button" class="button1" id="check-out-btn" data-toggle="modal" data-target="#">Check out</button>
+                    </a>
+                </div>
+                <div class="row">
+                    <span class="qty-control">
+                        <h5 class="text-left"><strong>Congrats</strong> — you get <strong>free delivery</strong> on all items sold by Walmart!
+                            Free pickup available. <a href="#">Learn more</a></h5>
+                    </span> 
+                </div>                                                                     
+            </div>                                                                            
+        </div>   
     </div>
+</div>
 
-    <div class="right col-9 border">
+
+
+    <div class="col mt-2 border">
         <section>
                 <div class="row">
                     <!-- begin result item -->
@@ -232,127 +237,31 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- begin result item -->
                     <div class="col-md-3 px-3 mb-5">
-                        <!-- begin heart toggle -->
-                        <div style="height: 30px;">
-                            <div class="heart-grid">
-                                <div class="heart">
-                                    <button id="swapHeart" class="btn btn-default swap">
-                                        <div class="heart-inactive">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
-                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
-                                            </svg>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesLeggingsSearchPage/championlegging.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h4><strong>Champion</strong></h4>
-                            <h5 class="product-title">Champion Women's Sport Ultra High Rise Legging Tight</h5>
-                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p><strong>Champion</strong></p>
+                            <p>Champion Women's Sport Ultra High Rise Legging Tight</p>
+                            <p class="small">***</p>
                             <p class="lead"><strong>$30.00 - $40.00</strong></p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <h5>Free delivery on orders over $35</h5>
-    
-                            <!-- begin clothing "Get" Button -->
-                            <div class="get">
-                                <a href="productpage.html">
-                                    <button type="button" class="button1" id="get-btn">Get</button>
-                                </a>
-                            </div>
+                            <p>Free delivery on orders over $35</p>
+                            <button class="button1">Get</button>
                         </div>
                     </div>
-                    
-                    <!-- begin result item -->
                     <div class="col-md-3 px-3 mb-5">
-                        <!-- begin heart toggle -->
-                        <div style="height: 30px;">
-                            <div class="heart-grid">
-                                <div class="heart">
-                                    <button id="swapHeart" class="btn btn-default swap">
-                                        <div class="heart-inactive">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
-                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
-                                            </svg>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end heart toggle -->
-                        <div>
-                            <img src="images/imagesLeggingsSearchPage/yogaliciouslegging.jpeg" alt="profile-01" class="img-fluid w-100 bb">
-                        </div>
-                        <div class="py-4">
-                            <h4><strong>Yogalicious</strong></h4>
-                            <h5 class="product-title">Women's Active Nude teck High Rise Side Pocket Ankle</h5>
-                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
-                            <p class="lead"><strong>$10.96</strong></p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <h5>Free delivery on orders over $35</h5>
-    
-                            <!-- begin clothing "Get" Button -->
-                            <div class="get">
-                                <a href="productpage.html">
-                                    <button type="button" class="button1" id="get-btn">Get</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- begin result item -->
-                    <div class="col-md-3 px-3 mb-5">
-                        <!-- begin heart toggle -->
-                        <div style="height: 30px;">
-                            <div class="heart-grid">
-                                <div class="heart">
-                                    <button id="swapHeart" class="btn btn-default swap">
-                                        <div class="heart-inactive">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
-                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
-                                            </svg>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesLeggingsSearchPage/avialegging.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <h4><strong>Avia</strong></h4>
-                            <h5 class="product-title">Avia Flex Tech 7/8 Length</h5>
-                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p><strong>Avia</strong></p>
+                            <p>Avia Flex Tech 7/8 Length</p>
+                            <p class="small">*****</p>
                             <p class="lead"><strong>$15.00</strong></p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <h5>Free delivery on orders over $35</h5>
-    
-                            <!-- begin clothing "Get" Button -->
-                            <div class="get">
-                                <a href="productpage.html">
-                                    <button type="button" class="button1" id="get-btn">Get</button>
-                                </a>
-                            </div>
+                            <p>2-day delivery</p>
+                            <p>Free delivery on orders over $35</p>
+                            <button class="button1">Get</button>
                         </div>
                     </div>
 
