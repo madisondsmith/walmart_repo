@@ -1441,9 +1441,9 @@ label {
 .item {
   background-color: white;
   float: left;
-  margin: 0 10px 10px 0;
+  margin: 10px 0;
   width: 205px;
-  padding: 10px;
+  padding: 0 30px;
 }
 
 .button3 {
@@ -1483,6 +1483,9 @@ label {
 
 .shopping-cart {
   display: inline-block;
+}
+
+.product-title-item-added {
   
 }
 
@@ -1612,4 +1615,41 @@ label {
   color: white;
   width: auto;
   background-color: transparent;
+}
+/* talk about everything below here */
+  #view-cart-btn {
+  font-size: 13px;
+  font-size: .875rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* height: 30px; */
+  /* width: 80px; */
+  padding: 0 18px;
+  border: 0;
+  border-radius: 50px;
+  background-color: white;
+  border: solid 1px black;
+  color: black;
+  font-weight: 700;
+  white-space: nowrap;
+  float: left;
+  /* width: 100%; */
+}
+
+#check-out-btn {
+  font-size: 13px;
+  font-size: .875rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* height: 30px; */
+  /* width: 80px; */
+  padding: 0 18px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #0071ce;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+  float: left;
+  /* width: 100%; */
 }
