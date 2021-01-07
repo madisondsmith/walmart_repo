@@ -50,8 +50,8 @@
             <div class="col text-right pt-3">
                 <span>
                     <i class="far px-3 fa-lg text-white fa-user-circle"></i><h6 class="text-white inline-display">Account</h5>
-                        <i class="far px-3 fa-lg text-white fa-heart"></i><h6 class="text-white inline-display">My Items</h5>
-                        <i class="fas pl-3 fa-lg text-white fa-shopping-cart"></i><h6 class="text-white inline-display"></h5>
+                    <i class="far px-3 fa-lg text-white fa-heart shopping-cart"></i><h6 class="text-white inline-display">My Items</h5>
+                    <i class="fas pl-3 fa-lg text-white fa-shopping-cart"></i><h6 class="text-white inline-display"></h5>
                 </span>    
             </div>
         </div>
@@ -65,14 +65,14 @@
 </header>
     <div class="container-fluid h-100">
         <div class="row">
-           
-        <div class="col-10 px-0 inline-display">
+        <div class="col px-0">
             <div class="row bg-light mt-0 mb-0">
-                <div class="col-6">
-                    <div class="form-group form-control-lg">
+                <div class="col-6 inline-display">
+                    <div class="form-group form-control-lg inline-display">
                         <label for="exampleFormControlSelect1"></label>
-                        <select class="form-control form-control-lg pt-0 mt-0 px-5 mb-0 w-100" id="exampleFormControlSelect1">
-                            <option>Pick up at: <strong>E. Stasney ln Walmart, Austin TX</strong></option>
+                        <div class="inline-display">
+                        <select class="form-control form-control-lg pt-0 mt-0 px-5 mb-0 w-100 inline-display" id="exampleFormControlSelect1">
+                            <option>Pick up at: E. Stassney ln Walmart, Austin TX</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
@@ -80,6 +80,7 @@
                         </select>
                     </div>
                 </div>
+            </div>
                 <div class="col-6">
                     <div class="form-group form-control-lg">
                         <label for="exampleFormControlSelect1"></label>
@@ -125,7 +126,6 @@
     </container>
     
      <!-- grid / fill in image + text. Don't worry about the headings or varying rows-->
-     
         <div class="container">
             <div class="row px-3 mt-5">
                 <div class="col pl-4">
@@ -133,269 +133,190 @@
                 </div>
             </div>
             <div class="row mt-3">
+
                 <div class="col-md-3 px-3 mb-5">
+                    <div class="row text-right">
+                        <i class="far fa-lg  fa-heart"></i>
+                    </div>
                     <div>
-                        <img src="images/imagesHome/produce/turkey.png" alt="profile-01" class="img-fluid banner-height bb">
+                        <img src="images/imagesHome/produce/milk.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                     </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">All deals on gifts</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/produce/beans.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Up to 40% off toys</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/produce/can.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Kitchen finds under $50</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/produce/bellpepper.jpeg" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Tech gifts from $17</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/stockingstuffers.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="row px-3 text-center">
-                        <div class="col text-center">
-                            <h3 class="p-5">Save big on gifts</h3>
+                    <div class="py-4">
+                        <div class="inline-display">
+                            <h4 class="inline-display"><strong>$12.98</strong></h4>
+                            <h6 class="inline-display pl-2 text-muted">(40.6 c/ea)</h6>
+                        </div>
+                        <h5 class="product-title">Community Coffee Breakfast Blend Medium Roast Ground 32 oz Gable Top</h5>
+                        <div class="get">
+                            <a href="productpage.html">
+                                <button type="button" class="button1" id="get-btn">Get</button>
+                            </a>
                         </div>
                     </div>
-                    <div class="py-4 text-center">
-                        <p><span class="small">Stocking stuffers</span></p>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <i class="far px-3 fa-lg text-right fa-heart add-to-cart"></i>
+                        <img src="images/imagesHome/produce/pullups.jpeg" class="img-fluid">
+                        <br>
+                        <div class="py-4">
+                            <div class="inline-display">
+                                <h4 class="inline-display"><strong>$27.84</strong></h4>
+                                <h6 class="inline-display pl-2 text-muted">(39 c/ea)</h6>
+                            </div>
+                            <h5 class="product-title">Pull-Ups Girls' Potty Training Pants Size 6, 4T-5T, 74 Ct</h5>
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 px-3 mb-5">
+                    <div class="row text-right">
+                        <i class="far fa-lg  fa-heart"></i>
+                    </div>
+                    <div>
+                        <img src="images/imagesHome/produce/balance.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                    </div>
+                    <div class="py-4">
+                        <div class="inline-display">
+                            <h4 class="inline-display"><strong>$3,22</strong></h4>
+                            <h6 class="inline-display pl-2 text-muted">(71.6 c/ea)</h6>
+                        </div>
+                        <h5 class="product-title">Sargento® Sweet Balanced Breaks®, Monterey Jack Natural Cheese, Dried Cranberries, Dark Chocolate Chunks & Banana Chips, 3-Pack</h5>
+                        <div class="get">
+                            <a href="productpage.html">
+                                <button type="button" class="button1" id="get-btn">Get</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 px-3 mb-5">
+                    <div class="row text-right">
+                        <i class="far fa-lg  fa-heart"></i>
+                    </div>
+                    <div>
+                        <img src="images/imagesHome/produce/lunch.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                    </div>
+                    <div class="py-4">
+                        <div class="inline-display">
+                            <h4 class="inline-display"><strong>$5.94</strong></h4>
+                        </div>
+                        <h5 class="product-title">Freshness Guaranteed Traditional Pulled Rotisserie Chicken, 16 oz</h5>
+                        <div class="get">
+                            <a href="productpage.html">
+                                <button type="button" class="button1" id="get-btn">Get</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 px-3 mb-5">
+                    <div class="row text-right">
+                        <i class="far fa-lg  fa-heart"></i>
+                    </div>
+                    <div>
+                        <img src="images/imagesHome/produce/bud.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                    </div>
+                    <div class="py-4">
+                        <div class="inline-display">
+                            <h4 class="inline-display"><strong>$10.96</strong></h4>
+                            <h6 class="inline-display pl-2 text-muted">(7.6cents/FLUID OZ)</h6>
+                        </div>
+                        <h5 class="product-title">Budweiser Zero Non-Alcoholic Beer, 12 Pack 12 fl. oz. Cans</h5>
+                        <div class="get">
+                            <a href="productpage.html">
+                                <button type="button" class="button1" id="get-btn">Get</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/carebear.png" alt="profile-01" class="img-fluid w-100 bb">
+                    <div class="row text-right">
+                        <i class="far fa-lg  fa-heart"></i>
                     </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Retro & nostalgic picks</span></h4>
+                    <div>
+                        <img src="images/imagesHome/produce/turkey.png" alt="profile-01" class="img-fluid w-100 bb">
+                    </div>
+                    <div class="py-4">
+                        <div class="inline-display">
+                            <h4 class="inline-display"><strong>$18.97</strong></h4>
+                            <h6 class="inline-display pl-2 text-muted"></h6>
+                        </div>
+                        <h5 class="product-title">SaraLee Honey Roasted turkey breast</h5>
+                        <div class="get">
+                            <a href="productpage.html">
+                                <button type="button" class="button1" id="get-btn">Get</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/fleece.png" alt="profile-01" class="img-fluid w-100 bb">
+                    <div class="row text-right">
+                        <i class="far fa-lg  fa-heart"></i>
                     </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Fashion gifts under $25</span></h4>
+                    <div>
+                        <img src="images/imagesHome/produce/mac.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                    </div>
+                    <div class="py-4">
+                        <div class="inline-display">
+                            <h4 class="inline-display"><strong>$12.98</strong></h4>
+                            <h6 class="inline-display pl-2 text-muted">(40.6 c/ea)</h6>
+                        </div>
+                        <h5 class="product-title">Community Coffee Breakfast Blend Medium Roast Ground 32 oz Gable Top</h5>
+                        <div class="get">
+                            <a href="productpage.html">
+                                <button type="button" class="button1" id="get-btn">Get</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/perfume.png" alt="profile-01" class="img-fluid w-100 bb">
+                    <div class="row text-right">
+                        <i class="far fa-lg  fa-heart"></i>
                     </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Gift sets</span></h4>
+                    <div>
+                        <img src="images/imagesHome/produce/pasta.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                    </div>
+                    <div class="py-4">
+                        <div class="inline-display">
+                            <h4 class="inline-display"><strong>12.28</strong></h4>
+                            <h6 class="inline-display pl-2 text-muted">(22.4 c/ea)</h6>
+                        </div>
+                        <h5 class="product-title">Nasoya Pasta Zero Shirataki Spaghetti 8 oz. Bag</h5>
+                        <div class="get">
+                            <a href="productpage.html">
+                                <button type="button" class="button1" id="get-btn">Get</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/pickupbag.jpg" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h3>Groceries & even more</h3>
-                        <h4><span class="small">9300 S Interstate 35 Ste B, Austin</span></h4>
-                        <button>Start your order</button>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/capital-one.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h3>Earn 5% cash back</h3>
-                        <h4><span class="small">every day on Walmart.com</span></h4>
-                        <button>Learn how</button>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/baby possum hang in there 500.jpg" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h3>Baby Possums! Free shipping! No order min.</h3>
-                        <h4><span class="small">Restrictions apply. Except in Arkansas</span></h4>
-                        <button>Family Fun</button>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/rabiesVaccine.jpg" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h3>Possum Fun = Rabies Fun</h3>
-                        <h4><span class="small">Rabies Vaccines $300/series</span></h4>
-                        <button>12 Shots/Series</button>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/air-fryer.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Home</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/videogames.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Video Games</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/electronics.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Electronics</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/toys.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Toys</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/fast-delivery.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Fast delivery</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/giftcards.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Gift cards</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/sportsgear.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Up to 30% off sports gear</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/bubble-tea.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Food gifts under $20</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/gift-finder.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Gift Finder</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/toy-catalog.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Toy catalog</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/holiday-home-favorites.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Holiday home favorites</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/walmart-cookshop.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <h4><span class="small">Walmart Cookshop</span></h4>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/smartphone.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <p><span class="small">Straight Talk SAMSUNG AS1, 128 GB Prism Crush Black - Prepaid Smartphone</span></p>
-                        <p>ratings></p>
-                        <h3><strong>$249.00</strong> $399.00</h3>
-                        <p>2-day delivery</p>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/lol-surprise.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <p><span class="small">L.O.L. Surprise O.M.G. Remix 2020 Collector Edition</span></p>
-                        <p>ratings></p>
-                        <h3><strong>$36.88</strong> $49.88</h3>
-                        <p>2-day delivery</p>
-                        <button>Add to cart</button>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/food.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <p><span class="small">Food gifts under $20</span></p>
-                        <p>ratings></p>
-                        <h3><strong>All Under $20</strong>
-                        <button>Choose Options</button>
-                    </div>
-                </div>
-                <div class="col-md-3 px-3 mb-5">
-                    <div>
-                        <img src="images/imagesHome/nintendo-switch.png" alt="profile-01" class="img-fluid w-100 bb">
-                    </div>
-                    <div class="py-4 text-center">
-                        <p><span class="small">8 Select Nintendo Switch Games: Buy One, Get One 50% Off</span></p>
-                        <p>ratings></p>
-                        <h3><strong>From $89.98</strong>  
-                        <button>Choose Options</button>
-                    </div>
-                </div>  
-            </div> 
-        </div>  
-    
+            </div>
         </div>
-        
-        <div class="col-2 inline-display h-100 text-black border">
+        </div>
+          
+
+              
+        <div class="col-3 inline-display h-100 text-black border">
             <div class="arrow-up"></div>
-           
-                <h4 class="d-flex pt-3 justify-content-between align-items-center mb-3">
-                <span class="text-muted text-center">Your cart (8 items)</span>
-               
-                </h4>
+            <div class="row">
+                <div class="col">
+                    <h4 class="pt-4 mb-5">
+                        <span class="text-muted text-center">Your cart <strong>(8 items)</strong></span>
+                    </h4>
+                </div>
+                <div class="col-2 text-right">
+                    <i class="fa fa-times pt-4" style="color:#cacaca;" class="pr-1" aria-hidden="true"></i>
+                </div>
+            </div>
                 <div class="row">
                     <div class="col-4 inline-display">
                         <img class="p-2 shop-item-image drop-menu" src="images/imagesHome/produce/banana.jpeg">
@@ -405,7 +326,7 @@
                         <h6 class="text-muted">5 x $00.19</h>      
                     </div>
                     <div class="col-1 inline-display close-icon">
-                        <i class="fa fa-times" style="color:#afafaf;" aria-hidden="true"></i>
+                        <h6 class="text-muted"><ins>edit</ins></h> 
                     </div>
                 </div>
                 <hr>
@@ -417,8 +338,8 @@
                         <h6>Whole milk</h6>
                         <h6 class="shop-item-price text-muted">1 x $2.99</h>      
                     </div>
-                    <div class="col-1 inline-display">
-                        <i class="fa fa-times" style="color:#afafaf;" class="pr-2" aria-hidden="true"></i>
+                    <div class="col-1 inline-display close-icon">
+                        <h6 class="text-muted"><ins>edit</ins></h> 
                     </div>
                 </div>
                 <hr>
@@ -431,7 +352,7 @@
                         <h6 class="shop-item-price text-muted">1 x $3.78</h>      
                     </div>
                     <div class="col-1 inline-display close-icon">
-                        <i class="fa fa-times" style="color:#afafaf;" aria-hidden="true"></i>
+                        <h6 class="text-muted"><ins>edit</ins></h> 
                     </div>
                 </div>
                 <hr>
@@ -444,7 +365,7 @@
                         <h6 class="shop-item-price text-muted">1 x $12.99</h>      
                     </div>
                     <div class="col-1 inline-display close-icon">
-                        <i class="fa fa-times" style="color:#afafaf;" aria-hidden="true"></i>
+                        <h6 class="text-muted"><ins>edit</ins></h> 
                     </div>
                 </div>
                 <hr>
@@ -457,11 +378,9 @@
                         <h6 class="shop-item-price text-muted">1 x $12.99</h>      
                     </div>
                     <div class="col-1 inline-display close-icon">
-                        <i class="fa fa-times" style="color:#afafaf;" aria-hidden="true"></i>
+                        <h6 class="text-muted"><ins>edit</ins></h> 
                     </div>
                 </div>
-                        
-           
 
         
             <hr class="bg-light">
@@ -470,7 +389,8 @@
                 <span class="cart-total-price">$46.92</span>
           
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-       
+            <button class="btn btn-outline btn-purchase" type="button">Add from My Items</button>
+        </div>
     </div>
 </div>
         
@@ -808,5 +728,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
 <script src="js/search.js"></script>
+<script src="js/cart-aimation.js"></script>
 </body>
 </html>
