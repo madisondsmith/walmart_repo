@@ -752,9 +752,6 @@ input[type=text] {
 }
 
 @media only screen and (max-width: 575px) {
-  .col-6{
-      /* width: 100% !important; */
-  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -764,14 +761,10 @@ input[type=text] {
 }
 
 @media only screen and (max-width: 575px) {
-  .nav-icons {
-      
-  }
+
 }
 
-.nav-icons {
-  
-}
+
 
 .icon {
   padding-top: 8px !important;
@@ -1485,9 +1478,6 @@ label {
   display: inline-block;
 }
 
-.product-title-item-added {
-  
-}
 
 /* hover nav bar */
 
@@ -1675,7 +1665,6 @@ label {
 .produce-card {
   border-radius: 8px;
   border: 2px solid #367c2b;
-
 }
 
 .block {
