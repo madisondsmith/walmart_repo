@@ -1,72 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Checkout</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-  </head>
-  <div id="topHeader" class="container-fluid dblue pt-3">
-    <div class="row mx-2 mt-2">
-        <div class="col mt-2">
-            <!-- walmart logo svg -->
-            <img class="img-fluid logo-size" src="images/imagesHome/logowhite.svg">
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-5">
-            <form autocomplete="off" action="/action_page.php">
-                <div class="autocomplete" style="width:500px;">
-                    <div class="input-group form-2 pl-0">
-                        <input id="myInput" class="form-control my-0 py-1" name="myCountry" type="text" placeholder="Search Walmart Groceries and Essentials" aria-label="Search">
-                        <div class="input-group-append">
-                            <a href="eggsproduct.html"><span class="input-group-text yellow lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css/stylesheets -->
+        <title>Add to cart annimation effect</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+<body>
+<header>
+    <div  class="container-fluid dblue pt-3">
+        <div class="row mx-2 mt-2">
+            <div class="col mt-2">
+                <!-- walmart logo svg -->
+                <img class="img-fluid logo-size" src="images/imagesHome/logowhite.svg">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5">
+                <form autocomplete="off" action="/action_page.php">
+                    <div class="autocomplete" style="width:500px;">
+                        <div class="input-group form-2 pl-0">
+                            <input id="myInput" class="form-control my-0 py-1" name="myCountry" type="text" placeholder="Search my store" aria-label="Search">
+                            <div class="input-group-append">
+                                <a href="eggsproduct.html"><span class="input-group-text yellow lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span></a>
+                            </div>
                         </div>
                     </div>
+                </form>      
+            </div>
+            <div class="col">
+                <div class="mb-3 text-right">
+                    <i class="fas pr-2 fa-lg text-white fa-bars"></i><h6 class="text-white inline-display">All Departments</h4>
+                    <h2 class="pl-2  font-weight-lighter inline-display text-light"> | </h2>
+                    <i class="far px-2 fa-lg text-white fa-question-circle"></i><h6 class="text-white inline-display">How can we help</h4>
                 </div>
-            </form>      
+            </div>
         </div>
-        <div class="col">
-            <div class="bd-highlight mb-3 text-right">
-                <i class="far px-2 fa-lg text-white fa-user-circle"></i><h6 class="text-white inline-display">Account</h5>
-                <i class="far px-2 fa-lg text-white fa-heart"></i><h6 class="text-white inline-display">My Items</h5>
-                <i class="fas px-2 fa-lg text-white fa-shopping-cart shopping-cart"></i><h6 class="text-white inline-display"></h5>
+        <div class="row mx-2">
+            <div class="col">
+                <button type="button" class="btn btn-outline-warning2">Shop entire Walmart</button>
+                <h2 class="pl-4 pr-4 font-weight-lighter inline-display text-light"> | </h2>
+                <button type="button" class="btn btn-outline-warning">Shop local for Pickup & Delivery</button>
+            </div>
+            <div class="col text-right pt-3">
+                <span>
+                    <i class="far px-3 fa-lg text-white fa-user-circle"></i><h6 class="text-white inline-display">Account</h5>
+                        <i class="far px-3 fa-lg text-white fa-heart"></i><h6 class="text-white inline-display">My Items</h5>
+                        <i class="fas pl-3 fa-lg text-white fa-shopping-cart"></i><h6 class="text-white inline-display"></h5>
+                </span>    
+            </div>
+        </div>
+       
+        <div class="row brightblue text-white mt-1">
+            <div class="col text-center">
+                <span><h4 class="pt-2 pb-2 m-0 inline-display"><strong>FREE</strong> pick up or delivery with $35 min order</h4></span>
             </div>
         </div>
     </div>
-    <div class="row mx-2">
-        <hr class="style-six">
-        <div class="col">
-            <span>
-                <i class="fas pr-2 fa-lg text-white fa-bars"></i><h6 class="text-white inline-display">All Departments</h4>
-                <h2 class="pl-2  font-weight-lighter inline-display text-light"> | </h2>
-                <i class="fas px-2 fa-lg text-white fa-star"></i><h6 class="text-white inline-display">My store:</h4>
-            </span>    
-        </div>
-        <div class="col text-right">
-            <span><i class="far px-2 fa-lg text-white fa-question-circle"></i><h6 class="text-white inline-display">How can we help</h4></span>
-        </div>
-    </div>
-    <div class="row text-white pt-3">
-        <div class="col-6 text-center">
-            <h4 class="shop-option">Shop entire Walmart</h4>
-        </div>
-        <div class="col-6 text-center">
-            <h4>Shop local for Pickup & Delivery</h4>
-        </div>
-    </div>
-    <div class="row brightblue text-white mt-1">
-        <div class="col text-center">
-            <h4 class="pt-1 m-0"><strong>FREE</strong> shipping with no min. purchase</h4>
-            <h6 class="pt-1"><ins>learn more</ins></h6>
-        </div>
-    </div>
-</div>
 </header>
 
 <body class="bg-light">
     <div class="container-fluid">
        <div class="row justify-content-center">
+           
             <div class="col-xs-12 col-sm-8 col-md-8 text-center p-0 mt-4 mb-2 mr-4 rounded shade">
                 <div class="card px-3 pt-4 pb-0  mb-3">
                     <h2 id="heading">Checkout</h2>
