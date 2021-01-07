@@ -106,86 +106,72 @@
 </div>
 <div class="row">
     <div class="col">
-        <h6 class="text-muted">Clothing/leggings   (See results in All departments)</h6>
+        <h6 class="text-muted px-3 py-3">Clothing/leggings   (See results in All departments)</h6>
     </div>
 </div>
 <div class="row">
     <div class="col">
-        <h6>1 - 15 results</h6>
+        <h6 class="px-3 py-3">1 - 15 results</h6>
     </div>
 </div>
 
     <!-- left side bar-->
     <div class="left col-3 pl-5">
-        <div class="row">
-        <h6><strong>Gifting</strong></h6>
-        <hr>
-        </div>
-        <div class="row">
-            <h6><strong>Category</strong></h6>
-        </div>
-            <hr>
-            <h6>Clothing</h6>
-            <p class="pl-5">
-                <ul>
-                    <li>
-                        Womens Leggings
-                    </li>
-                    <li>
-                        Womens Activewear
-                    </li>
-                    <li>
-                        Leggings, Pants & Capris
-                    </li>
-                    <li>
-                        Womens Pluss Leggings
-                    </li>
-                    <li>
-                        Back to School Clothing
-                    </li>
-                    <li>
-                        Bags & Accessories
-                    </li>
-                    <li>
-                        Big & Tall
-                    </li>
-                    <li>
-                        Juniors Plus
-                    </li>
-                    <li>
-                        Kids Clothing
-                    </li>
-                    <li>
-                        Maternity Clothing
-                    </li>
-                    <li>
-                        Maternity Plus
-                    </li>
-                    <li>
-                        Mens Clothing
-                    </li>
-                    <li>
-                        Pre-Owned
-                    </li>
-                    <li>
-                        Premium Beauty
-                    </li>
-                    <li>
-                        Scrubs
-                    </li>
-                    <li>
-                        Shoes
-                    </li>
-                    <li>
-                        Womens Petite
-                    </li>
-                    <li>
-                        Womens Petite Plus
-                    </li>
-                </ul>
-            </p>
-            <p>See All Departments</p>
-            <hr>
+        <div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <span>Gifting</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Category</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Delivery & Pickup</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Brand</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Clothing Size</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Clothing Size Group</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Pant Leg Length</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Color</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Fabric Material</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Retailer</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Price</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Special Offers</span>
+                    <span class="text-right">+</span>
+                </li>
+                <li class="list-group-item">
+                    <span>Customer Rating</span>
+                    <span class="text-right">+</span>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -222,7 +208,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                            <h5>2-day delivery</h5>
+                            <!-- <h5>2-day delivery</h5> -->
     
                             <!-- begin clothing "Get" Button -->
                             <div class="get">
@@ -263,7 +249,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                            <h5>Free delivery on orders over $35</h5>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
     
                             <!-- begin clothing "Get" Button -->
                             <div class="get">
@@ -304,7 +290,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                            <h5>Free delivery on orders over $35</h5>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
     
                             <!-- begin clothing "Get" Button -->
                             <div class="get">
@@ -345,7 +331,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                            <h5>Free delivery on orders over $35</h5>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
     
                             <!-- begin clothing "Get" Button -->
                             <div class="get">
@@ -356,160 +342,455 @@
                         </div>
                     </div>
 
+                    <!-- begin result item -->
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesLeggingsSearchPage/athleticworks1.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <p><strong>Athletic Works</strong></p>
-                            <p>Athletic Works Performance Leggings</p>
-                            <p class="small">*****</p>
+                            <h4><strong>Athletic Works</strong></h4>
+                            <h5 class="product-title">Athletic Works Performance Leggings</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
                             <p class="lead"><strong>$16.84</strong></p>
-                            <p>Free pickup today</p>
-                            <p>Free delivery on orders over $35</p>
-                            <button class="button1">Get</button>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- begin result item -->
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesLeggingsSearchPage/womanwithin.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <p><strong>Woman Within</strong></p>
-                            <p>Woman Within Women's Plus Size Cotton Legging</p>
-                            <p class="small">*****</p>
-                            <p class="lead"><strong>$18.29-$29.99</strong></p>
-                            <p>Shipped and sold by FullBeauty</p>
-                            <p>Free delivery</p>
-                            <button class="button1">Get</button>
+                            <h4><strong>Woman Within</strong></h4>
+                            <h5 class="product-title">Woman Within Women's Plus Size Cotton Legging</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p class="lead"><strong>$18.29 - $29.99</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- begin result item -->
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesLeggingsSearchPage/noboundaries.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <p><strong>No Boundaries</strong></p>
-                            <p>No Boundaries 3-Pack Ankle Legging</p>
-                            <p class="small">***</p>
+                            <h4><strong>No Boundaries</strong></h4>
+                            <h5 class="product-title">No Boundaries 3-Pack Ankle Legging</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
                             <p class="lead"><strong>$11.98</strong></p>
-                            <p>2-day delivery</p>
-                            <p>Free delivery on orders over $35</p>
-                            <button class="button1">Get</button>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- begin result item -->
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesLeggingsSearchPage/mixmatchy.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <p><strong>MixMatchy</strong></p>
-                            <p>MixMatchy Women's High Waist Leggings</p>
-                            <p class="small">***</p>
-                            <p class="lead"><strong>$11.99</strong></p>
-                            <p>Shipped and sold by MixMatchy</p>
-                            <p>Free delivery</p>
-                            <button class="button1">Get</button>
+                            <h4><strong>MixMatchy</strong></h4>
+                            <h5 class="product-title">MixMatchy Women's High Waist Leggings</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p class="lead"><strong>$11.98</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- begin result item -->
                     <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
                         <div>
                             <img src="images/imagesLeggingsSearchPage/athleticworks2.jpeg" alt="profile-01" class="img-fluid w-100 bb">
                         </div>
                         <div class="py-4">
-                            <p><strong>Athletic Works</strong></p>
-                            <p>Athletic Works Women's Dri More Legging</p>
-                            <p class="small">****</p>
+                            <h4><strong>Athletic Works</strong></h4>
+                            <h5 class="product-title">Athletic Works Women's Dri More Legging</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
                             <p class="lead"><strong>$9.00</strong></p>
-                            <p>2-day delivery</p>
-                            <p>Free delivery on orders over $35</p>
-                            <button class="button1">Get</button>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- begin result item -->
                     <div class="col-md-3 px-3 mb-5">
-                            <div>
-                                <img src="images/imagesLeggingsSearchPage/kogmo.jpeg" alt="profile-01" class="img-fluid w-100 bb">
-                            </div>
-                            <div class="py-4">
-                                <p><strong>KOGMO</strong></p>
-                                <p>KOGMO Women's Premium Leggings</p>
-                                <p class="small">****</p>
-                                <p class="lead"><strong>$11.99</strong></p>
-                                <p>Shipped and sold by KOGMO</p>
-                                <p>Free delivery</p>
-                                <button class="button1">Get</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3 px-3 mb-5">
-                            <div>
-                                <img src="images/imagesLeggingsSearchPage/whitemark.jpeg" alt="profile-01" class="img-fluid w-100 bb">
-                            </div>
-                            <div class="py-4">
-                                <p><strong>White Mark</strong></p>
-                                <p>White Mark Women's 3 Pack of Christmas Legging</p>
-                                <p class="small">****</p>
-                                <p class="lead"><strong>$15.99</strong></p>
-                                <p>2-day delivery</p>
-                                <p>Free delivery on orders over $35</p>
-                                <button class="button1">Get</button>
-                            </div>
-                        </div>
-                            <div class="col-md-3 px-3 mb-5">
-                                <div>
-                                    <img src="images/imagesLeggingsSearchPage/hanes.jpeg" alt="profile-01" class="img-fluid w-100 bb">
-                                </div>
-                                <div class="py-4">
-                                    <p><strong>Hanes</strong></p>
-                                    <p>Hanes Women's Cotton Legging</p>
-                                    <p class="small">****</p>
-                                    <p class="lead"><strong>$8.96</strong></p>
-                                    <p>2-day delivery</p>
-                                    <p>Free delivery on orders over $35</p>
-                                    <button class="button1">Get</button>
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
                                 </div>
                             </div>
+                        </div>
+                        <!-- end heart toggle -->
+                        <div>
+                            <img src="images/imagesLeggingsSearchPage/kogmo.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                        </div>
+                        <div class="py-4">
+                            <h4><strong>KOGMO</strong></h4>
+                            <h5 class="product-title">KOGMO Women's Premium Leggings</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p class="lead"><strong>$11.99</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- begin result item -->
+                    <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
+                        <div>
+                            <img src="images/imagesLeggingsSearchPage/whitemark.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                        </div>
+                        <div class="py-4">
+                            <h4><strong>White Mark</strong></h4>
+                            <h5 class="product-title">White Mark Women's 3 Pack of Christmas Legging</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p class="lead"><strong>$15.99</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- begin result item -->
+                    <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
+                        <div>
+                            <img src="images/imagesLeggingsSearchPage/hanes.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                        </div>
+                        <div class="py-4">
+                            <h4><strong>Hanes</strong></h4>
+                            <h5 class="product-title">Hanes Women's Cotton Legging</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p class="lead"><strong>$8.96</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- begin result item -->
+                    <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end heart toggle -->
+                        <div>
+                            <img src="images/imagesLeggingsSearchPage/altheticworks3.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                        </div>
+                        <div class="py-4">
+                            <h4><strong>Athletic Works</strong></h4>
+                            <h5 class="product-title">Athletic Works Women's Dri More Legging</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p class="lead"><strong>$10.00</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                             
-                            <div class="col-md-3 px-3 mb-5">
-                                    <div>
-                                        <img src="images/imagesLeggingsSearchPage/athleticworks2.jpeg" alt="profile-01" class="img-fluid w-100 bb">
-                                    </div>
-                                    <div class="py-4">
-                                        <p><strong>Athletic Works</strong></p>
-                                        <p>Athletic Works Women's Dri More Legging</p>
-                                        <p class="small">****</p>
-                                        <p class="lead"><strong>$10.00</strong></p>
-                                        <p>2-day delivery</p>
-                                        <p>Free delivery on orders over $35</p>
-                                        <button class="button1">Get</button>
-                                    </div>
+                     <!-- begin result item -->
+                    <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col-md-3 px-3 mb-5">
-                                <div>
-                                    <img src="images/imagesLeggingsSearchPage/timeandtru.jpeg" alt="profile-01" class="img-fluid w-100 bb">
-                                </div>
-                                <div class="py-4">
-                                    <p><strong>Time and Tru</strong></p>
-                                    <p>Time and Tru Women's Stretch Legging</p>
-                                    <p class="small">****</p>
-                                    <p class="lead"><strong>$12.96</strong></p>
-                                    <p>2-day delivery</p>
-                                    <p>Free delivery on orders over $35</p>
-                                    <button class="button1">Get</button>
-                                </div>
                         </div>
-                        <div class="col-md-3 px-3 mb-5">
-                            <div>
-                                <img src="images/imagesLeggingsSearchPage/canis.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                        <!-- end heart toggle -->
+                        <div>
+                            <img src="images/imagesLeggingsSearchPage/timeandtru.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                        </div>
+                        <div class="py-4">
+                            <h4><strong>Time and Tru</strong></h4>
+                            <h5 class="product-title">Time and Tru Women's Stretch Legging</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p class="lead"><strong>$12.96</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
                             </div>
-                            <div class="py-4">
-                                <p><strong>Canis</strong></p>
-                                <p>Canis Women's Sports Legging</p>
-                                <p class="small">****</p>
-                                <p class="lead"><strong>$12.96</strong></p>
-                                <p>2-day delivery</p>
-                                <p>Free delivery on orders over $35</p>
-                                <button class="button1">Get</button>
+                        </div>
+                    </div>       
+
+                    <!-- begin result item -->
+                    <div class="col-md-3 px-3 mb-5">
+                        <!-- begin heart toggle -->
+                        <div style="height: 30px;">
+                            <div class="heart-grid">
+                                <div class="heart">
+                                    <button id="swapHeart" class="btn btn-default swap">
+                                        <div class="heart-inactive">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                                <path d="M21.281 9.076c-.317 1.427-1.031 2.776-2.142 3.966a108.712 108.712 0 01-4.284 4.284c-.872.872-1.824 1.745-2.776 2.618l-.08.08-.079-.08c-.952-.873-1.904-1.746-2.776-2.618a108.137 108.137 0 01-4.283-4.284c-1.111-1.19-1.825-2.539-2.142-3.966-.397-1.666.158-2.856.635-3.57.696-1.046 1.903-1.81 3.18-1.895 2.027-.136 3.465 1.45 4.498 2.982.29.43.603.847.9 1.274l.068.099.068-.099c.296-.427.609-.843.9-1.274 1.033-1.531 2.47-3.118 4.497-2.982 1.278.085 2.484.849 3.181 1.895.477.714 1.032 1.904.635 3.57M12 5.004a6.535 6.535 0 00-1.476-1.72c-1.207-1.003-3.06-1.661-4.632-1.269-2.46.397-5.553 3.253-4.76 7.298.352 1.799 1.321 3.41 2.539 4.755 1.376 1.52 2.868 2.951 4.363 4.369A203.883 203.883 0 0012 22.1a201.526 201.526 0 003.966-3.663c1.496-1.418 2.986-2.848 4.362-4.369 1.219-1.345 2.187-2.956 2.54-4.755.793-4.045-2.301-6.9-4.76-7.298-1.571-.392-3.425.266-4.633 1.27A6.532 6.532 0 0012 5.004" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
+                        </div>
+                        <!-- end heart toggle -->
+                        <div>
+                            <img src="images/imagesLeggingsSearchPage/canis.jpeg" alt="profile-01" class="img-fluid w-100 bb">
+                        </div>
+                        <div class="py-4">
+                            <h4><strong>Canis</strong></h4>
+                            <h5 class="product-title">Canis Women's Sports Legging</h5>
+                            <!-- <h5>Sold & shipped by MGR Fantastic Deals Inc.</h5> -->
+                            <p class="lead"><strong>$12.96</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!-- <h5>Free delivery on orders over $35</h5> -->
+    
+                            <!-- begin clothing "Get" Button -->
+                            <div class="get">
+                                <a href="productpage.html">
+                                    <button type="button" class="button1" id="get-btn">Get</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>        
         </section>
