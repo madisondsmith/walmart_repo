@@ -1740,8 +1740,8 @@ label {
 .arrow-up {
   width: 0; 
   height: 0; 
-  
-  margin-left: 70%;
+  margin-left: 80%;
+
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 15px solid white;
@@ -1753,3 +1753,10 @@ label {
   padding: 0.75rem 1.25rem !important;
   margin-bottom: 1px !important;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
