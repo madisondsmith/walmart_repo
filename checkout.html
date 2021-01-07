@@ -321,6 +321,31 @@
                                         <h5><ins>Change</ins></h5>
                                     </div>
                                 </div> 
+
+                                <div class="row justify-content-center bg-light">
+                                    <div class="col-1">
+                                        <br>
+                                        <h4>3</h4>
+                                    </div>
+                                    <div class="col-7">
+                                        <br>
+                                        <h4 class="mb-2">Order details:</h4>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="same-address" checked>
+                                            <label class="form-check-label" for="same-address">Allow substitutions</label>
+                                        </div>
+                                        <br>
+                                        <h5>Comments:</h5>
+                                        <div class="rounded border w-75 p-3 my-2">
+                                            <h5 class="text-muted">Please don't knock as we have a baby who might be sleeping. Also avocado toast is big in our home and we hope to eat it tomorrow, so please take care that the avocados are the correct ripeness. THANKS!!</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 text-right">
+                                        <br>
+                                        <h5><ins>Change</ins></h5>
+                                    </div>
+                                </div> 
+
                                 <div class="row justify-content-center">
                                     <div class="col-6">
                                         <br>
@@ -334,8 +359,11 @@
                                
                                 <div class="row justify-content-center">
                                     <div class="col-xs-12 col-sm-10 col-md-6">
-                                        <h4 class="mb-3">Billing address:</h4>
-                                        <div class="form-check">
+                                        <div class="inline-display w-100">
+                                        <h4 class="inline-display">Billing address:</h4>
+                                        <h6 class="inline-display text-right"><ins>Change</ins></h6>
+                                    </div>
+                                        <div class="pt-2 form-check">
                                             <input class="form-check-input pr-3" type="checkbox" value="" id="defaultCheck1" checked>
                                             <label class="form-check-label" for="defaultCheck1">
                                               Same as shipping address
@@ -343,10 +371,11 @@
                                           </div>
                                        
                                         <h4 class="mt-2">4806 Lorell st.<br>Austin, TX 78742</h4>
+                                        <hr>
                                         <br>
-                                        <h6><ins>Change</ins></h6>
+                                        
 
-                                        <h4 class="mb-3">Payment method</h4>
+                                        <h4 class="mb-3">Payment method:</h4>
                                         <form>
                                             <div class="payment-select">
                                                 <input id="own-style" type="radio"><label>Paypal</label>
@@ -363,17 +392,17 @@
                                         <div class="form">
                                             <div class="card icon-relative">
                                                 <label class="label">Card holder:</label>
-                                                <input type="text" class="input bg-white rounded mb-3" name="card_holder" placeholder="Henrietta Downey">
+                                                <input type="text" class="input bg-white rounded text-left mb-3" name="card_holder" placeholder="Henrietta Downey">
                                                 <!-- <i class="far fa-user"></i> -->
                                             </div>
                                             <div class="card icon-relative">
                                                 <label class="label">Card number:</label>
                                                 <div class="input-group">
-                                                <input type="text" class="input bg-white rounded mb-3" name="card_holder" data-mask="0000 0000 0000 0000" placeholder="Card Number">
-                                                <!-- <i class="far fa-credit-card"></i> -->
+                                                    <input type="text" class="input bg-white text-left rounded mb-3" name="card_holder" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+                                                    <!-- <i class="far fa-credit-card"></i> -->
+                                                </div>
                                             </div>
-                                            </div>
-                                            <div class="card-grp">
+                                            <div class="card-grp mt-4">
                                                 <div class="card-item icon-relative">
                                                     <label class="label">Exp date:</label>
                                                     <input type="text" class="input bg-white rounded mb-3" name="exp_date" data-mask="00 / 00" placeholder="00 / 00">
@@ -381,12 +410,11 @@
                                                 <div class="card-item icon-relative">
                                                     <label class="label">CVC:</label>
                                                     <i class="far fa-question-circle pl-3"></i>
-                                                    <input type="text" class="input bg-white rounded mb-3" name="cvc" data-mask="000" placeholder="000">
+                                                    <input type="text" class="input bg-white rounded mb-3" name="cvc" data-mask="000" required placeholder="000">
                                                     
                                                 </div>
                                             </div>
-                                            <button class="btn btn-primary btn-pay btn-purchase" type="button">PURCHASE</button>
-                                            <input type="button" name="previous" class="previous btn-outline btn action-button-previous" value="Previous" />
+                                            <input type="submit" value="Submit" class="w-100 bg-primary text-white">
                                         </div>
                                         
                                     </div>
