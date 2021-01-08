@@ -362,6 +362,10 @@ button > span {
  .brightblue {
    background-color: #1274d9;
  }
+
+ .bbluecolor {
+   color:  #1274d9;
+ }
   
  .orange {
     background-color: #f47321;
@@ -1760,3 +1764,9 @@ label {
   width: 100%;
 }
 
+.rss.opacity { filter: opacity(30%); }
+
+.nIcon {
+  width: 50px;
+  height: 50px;
+}
