@@ -362,6 +362,10 @@ button > span {
  .brightblue {
    background-color: #1274d9;
  }
+
+ .bbluecolor {
+   color:  #1274d9;
+ }
   
  .orange {
     background-color: #f47321;
@@ -1760,3 +1764,20 @@ label {
   width: 100%;
 }
 
+.rss.opacity { filter: opacity(20%); }
+
+.nIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.vl {
+  border-left: 1px solid black;
+  filter: opacity(100%); 
+  height: 100%;
+}
+
+.shoppingItem {
+  max-width: 150px;
+  max-height: 200px;
+}
